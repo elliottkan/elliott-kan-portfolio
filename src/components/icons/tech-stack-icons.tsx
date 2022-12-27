@@ -56,7 +56,7 @@ export const techStackIcons = [
     name: "VSCode",
   },
   {
-    icon: <DiIcons.DiGithubBadge />,
+    icon: <DiIcons.DiGitBranch />,
     name: "Git",
   }
 ]
