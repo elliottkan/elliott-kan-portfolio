@@ -1,0 +1,23 @@
+.clickable-icon {
+  transition: all 0.3s ease;
+  &:hover {
+    color: black;
+  }
+}
+
+.hover-icon {
+  transition: all 0.3s ease;
+  &:hover {
+    color: black;
+  }
+  svg {
+    margin-left: 36px;
+    margin-right: 10px;
+    height: 28px;
+  }
+  @media only screen and (max-width: 1024px) {
+    svg {
+      margin-left: 0;
+    }
+  }
+}
