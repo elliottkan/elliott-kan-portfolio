@@ -1,6 +1,5 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import { techStackIcons } from "../components/icons/tech-stack-icons";
 import TechStack from "../components/sections/techstack/techstack"
 import './style.scss'
 
