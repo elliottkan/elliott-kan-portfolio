@@ -3,9 +3,13 @@ import { techStackIcons } from "../../icons/tech-stack-icons";
 
 const TechStack = () => {
   return (
-    <div>
-      techStackIcons
-    </div>
+    <ul>
+      {techStackIcons.map(({ icon, name }) => (
+          <li>
+            {icon} {name}
+          </li>
+        ))}
+    </ul>
   )
 }
 
