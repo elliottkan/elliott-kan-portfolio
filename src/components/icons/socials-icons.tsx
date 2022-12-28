@@ -5,11 +5,7 @@ import * as DiIcons from 'react-icons/di';
 
 export const socialsIcons = [
   {
-    icon: <AiIcons.AiOutlineMail/>,
-    link: "elliottkan7@gmail.com"
-  },
-  {
-    icon: <SiIcons.SiMedium/>,
+    icon: <SiIcons.SiMedium size={70}/>,
     link: "https://medium.com/@elliottk"
   },
   {
@@ -20,4 +16,11 @@ export const socialsIcons = [
     icon: <AiIcons.AiFillLinkedin/>,
     link: "https://www.linkedin.com/in/elliottkan/"
   },
+]
+
+export const emailIcons = [
+  {
+    icon: <AiIcons.AiOutlineMail/>,
+    link: "elliottkan7@gmail.com"
+  }
 ]

@@ -1,7 +1,13 @@
 .clickable-icon {
   transition: all 0.3s ease;
+  color: black;
   &:hover {
     color: black;
+  }
+  svg {
+    margin-left: 36px;
+    margin-right: 10px;
+    height: 28px;
   }
 }
 
@@ -20,4 +26,8 @@
       margin-left: 0;
     }
   }
+}
+
+.resume-button {
+
 }

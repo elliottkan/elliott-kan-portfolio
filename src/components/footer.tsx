@@ -1,4 +1,46 @@
-import { socialsIcons } from "./icons/socials-icons"
+import React from 'react';
+import { socialsIcons } from "./icons/socials-icons";
+import { emailIcons } from "./icons/socials-icons";
+import "./icons/icons.scss"
+import "./footer.scss"
+
+const ResumeLink = (
+  <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    My Resume
+  </a>
+);
+
+const Icons = (
+  socialsIcons.map(({ icon, link }) => (
+    <a className="clickable-icon" href={link} target="_blank" rel="noopener noreferrer">
+      {icon}
+    </a>
+  ))
+)
+
+const Email = (
+  emailIcons.map(({ icon, link }) => (
+    <a className="clickable-icon" href={`mailto:${link}`}>{icon}</a>
+  ))
+)
+
+
+
+const Footer = () => {
+  return (
+    <div>
+      <div>
+        <p>© 2022 CODED AND DESIGNED BY ELLIOTT KAN</p>
+      </div>
+      <div>
+        {ResumeLink}
+        {Icons}
+        {Email}
+      </div>
+    </div>
+  )
+}
+
 
 // import React, { useState, useEffect } from 'react';
 // import PropTypes from 'prop-types';
@@ -132,4 +174,4 @@ import { socialsIcons } from "./icons/socials-icons"
 //   githubInfo: PropTypes.object,
 // };
 
-// export default Footer;
+export default Footer;
