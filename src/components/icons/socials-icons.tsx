@@ -10,14 +10,14 @@ export const socialsIcons = [
   },
   {
     icon: <SiIcons.SiMedium/>,
-    link: ""
+    link: "https://medium.com/@elliottk"
   },
   {
     icon: <DiIcons.DiGithubBadge/>,
-    link: ""
+    link: "https://github.com/elliottkan"
   },
   {
     icon: <AiIcons.AiFillLinkedin/>,
-    link: ""
+    link: "https://www.linkedin.com/in/elliottkan/"
   },
 ]
