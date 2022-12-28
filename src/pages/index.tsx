@@ -6,8 +6,10 @@ import './style.scss'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main className="container">
+    <main>
+      <div className="container">
       <TechStack />
+      </div>
       <Footer />
     </main>
   )

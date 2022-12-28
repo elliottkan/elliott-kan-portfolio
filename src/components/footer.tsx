@@ -6,7 +6,7 @@ import "./footer.scss"
 
 const ResumeLink = (
   <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-    My Resume
+    Resume
   </a>
 );
 
@@ -28,12 +28,11 @@ const Email = (
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer-container">
       <div>
         <p>© 2022 CODED AND DESIGNED BY ELLIOTT KAN</p>
       </div>
-      <div>
-        {ResumeLink}
+      <div className="icons-container">
         {Icons}
         {Email}
       </div>

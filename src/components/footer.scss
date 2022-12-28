@@ -1,0 +1,21 @@
+.footer-container {
+  min-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  &:hover .clickable-icon {
+    color: gray;
+  }
+
+}
+
+.icons-container {
+
+  &:hover {
+    filter: grayscale(100%);
+  }
+}
+.wrapper:hover .title {
+  background-color: #f00;
+}
