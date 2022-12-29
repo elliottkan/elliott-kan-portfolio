@@ -9,6 +9,41 @@ const IndexPage: React.FC<PageProps> = () => {
     <main>
       <div className="container">
       <TechStack />
+      <div>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+          <h1>MASSIVE CONTENT</h1>
+      </div>
       </div>
       <Footer />
     </main>
