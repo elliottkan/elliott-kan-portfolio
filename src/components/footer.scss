@@ -1,26 +1,19 @@
-.footer-container {
-
-  &:hover .clickable-icon {
-    color: gray;
-  }
-}
-
-
-.icons-container{
-
-  &:hover {
-    filter: grayscale(100%);
-  }
-}
-
 @media only screen and (min-width: 0px) {
   .footer-container {
     position: relative;
     text-align: center;
+
+    &:hover .clickable-icon {
+      color: gray;
+    }
   }
 
   .icons-container {
     float: none;
+
+    &:hover {
+      filter: grayscale(100%);
+    }
   }
 }
 
@@ -33,11 +26,11 @@
     min-height: 32px;
     align-items: center;
     text-align: start;
-    padding-left: 1em;
+    margin-left: 1.5em;
   }
 
   .icons-container {
     float: right;
-    margin-right: 2em;
+    margin-right: 3em;
   }
 }

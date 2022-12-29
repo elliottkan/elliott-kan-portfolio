@@ -1,7 +1,7 @@
 .clickable-icon {
   transition: all 0.3s ease;
   color: black;
-  margin-left: 0.5em;
+  margin-left: 0.3em;
   &:hover {
     color: black !important;
   }
@@ -11,39 +11,10 @@
 }
 
 .resume-button {
-  padding: 0.3em 2em;
-  border: 2px solid #000;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  z-index: 1;
+  background-color: transparent;
+  border: 1px solid black;
+  line-height: 1;
   text-decoration: none;
-
-  &:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background: #e0e5ec;
-    transition: all 0.3s ease;
-  }
-
-  &:hover {
-    color: #000;
-  }
-
-  &:hover:after {
-    left: 0;
-    width: 100%;
-  }
-
-  &:active {
-    top: 2px;
-  }
+  cursor: pointer;
+  margin-left: 15px;
 }
