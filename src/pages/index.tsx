@@ -3,6 +3,8 @@ import type { HeadFC, PageProps } from "gatsby"
 import TechStack from "../components/sections/techstack/techstack"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import '../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf';
+import '../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf';
 import './style.scss'
 
 const FillerContent = () => {
