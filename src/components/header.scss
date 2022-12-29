@@ -2,12 +2,17 @@
   .navbar-container {
     background-color: white;
     position: fixed;
-    height: 60px;
-    top: 10px;
+    height: 50px;
+    padding-top: 10px;
+    top: 0px;
     align-items: center;
     justify-content: space-between;
     display: flex;
     width: 100%;
+
+    &:hover li a{
+      color: gray;
+    }
 
     .title-container {
       margin-right: 2.5em;
@@ -15,6 +20,8 @@
 
     .link-container {
       margin-left: 2em;
+      display: flex;
+      align-items: center;
 
       ul {
         display: flex;
@@ -22,13 +29,20 @@
         justify-content: space-between;
         -webkit-box-align: center;
         align-items: center;
-        padding: 0px;
         margin: 0px;
         list-style: none;
-      }
-      a {
-        padding: 0.5em 1.5em;
-        text-decoration: none;
+
+        li a{
+          padding: 0.5em 1.5em;
+          text-decoration: none;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: black;
+            text-decoration: underline;
+            text-underline-offset: 1em;
+          }
+        }
       }
     }
   }

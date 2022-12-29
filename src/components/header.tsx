@@ -21,8 +21,10 @@ const Header = () => {
     <header>
       <nav className="navbar-container">
         <div className="link-container">
+          <div>
+            <ResumeLink />
+          </div>
           <ul>
-            <li><ResumeLink /></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#work">Work</a></li>
