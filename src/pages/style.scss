@@ -2,3 +2,27 @@
   max-width: 1024px;
   margin: 2rem auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Space Grotesk";
+}
+h1, h2, h3 {
+  font-family: "Roboto Mono";
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url(../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+}
