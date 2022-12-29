@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 1px solid black;
   border-radius: 100%;
   transform: translate(-50%, -50%);
@@ -30,12 +30,13 @@
 }
 
 .hover {
-  transition: 0.2s;
-  width: 30px;
-  height: 30px;
+  transition: 100ms;
+  width: 40px;
+  height: 40px;
   opacity: 0.2;
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  transition: ease-in-out 200ms;
 }
