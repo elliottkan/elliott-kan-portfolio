@@ -1,21 +1,36 @@
-.footer-container {
-  min-height: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1em;
-  &:hover .clickable-icon {
-    color: gray;
+@media only screen and (min-width: 0px) {
+  .footer-container {
+    position: relative;
+    text-align: center;
+
+    &:hover .clickable-icon {
+      color: gray;
+    }
   }
 
-}
+  .icons-container {
+    float: none;
 
-.icons-container {
-
-  &:hover {
-    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(100%);
+    }
   }
 }
-.wrapper:hover .title {
-  background-color: #f00;
+
+@media only screen and (min-width: 640px) {
+  .footer-container {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    min-height: 32px;
+    align-items: center;
+    text-align: start;
+    margin-left: 1.5em;
+  }
+
+  .icons-container {
+    float: right;
+    margin-right: 3em;
+  }
 }

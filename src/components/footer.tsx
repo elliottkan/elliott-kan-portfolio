@@ -29,12 +29,12 @@ const Email = (
 const Footer = () => {
   return (
     <div className="footer-container">
-      <div>
-        <p>© 2022 CODED AND DESIGNED BY ELLIOTT KAN</p>
-      </div>
       <div className="icons-container">
         {Icons}
         {Email}
+      </div>
+      <div>
+        <p>© 2022 -  Coded and designed by Elliott Kan</p>
       </div>
     </div>
   )

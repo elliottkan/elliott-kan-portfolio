@@ -1,0 +1,35 @@
+@media only screen and (min-width: 640px) {
+  .navbar-container {
+    background-color: white;
+    position: fixed;
+    height: 60px;
+    top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    .title-container {
+      margin-right: 2.5em;
+    }
+
+    .link-container {
+      margin-left: 2em;
+
+      ul {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+      }
+      a {
+        padding: 0.5em 1.5em;
+        text-decoration: none;
+      }
+    }
+  }
+}
