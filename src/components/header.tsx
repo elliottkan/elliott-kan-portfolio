@@ -37,8 +37,6 @@ const Header = () => {
 
   }
 
-  const { direction, position } = useScroll()
-
   return (
     <header>
       <nav className="navbar-container">

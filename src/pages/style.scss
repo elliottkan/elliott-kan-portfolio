@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+ol, ul, li {
+  list-style: none;
+}
+
 @font-face {
   font-family: 'Roboto Mono';
   src: url(../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf) format('truetype');
