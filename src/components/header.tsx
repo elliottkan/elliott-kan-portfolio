@@ -9,10 +9,32 @@ const Header = () => {
 
   const ResumeLink = () => {
     return (
-      <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-        Resume
-      </a>
+      <div>
+        <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+      </div>
     )
+  }
+
+  const SectionLinks = () => {
+    return (
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    )
+  }
+
+  const LogoLink = () => {
+    return (
+      <h2>
+        <a href="/">Elliott Kan</a>
+      </h2>
+    )
+
   }
 
   const { direction, position } = useScroll()
@@ -21,16 +43,11 @@ const Header = () => {
     <header>
       <nav className="navbar-container">
         <div className="link-container">
-          <ul>
-            <li><ResumeLink /></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <ResumeLink />
+          <SectionLinks/>
         </div>
         <div className="title-container">
-          <h2>Elliott Kan</h2>
+          <LogoLink/>
         </div>
       </nav>
     </header>
