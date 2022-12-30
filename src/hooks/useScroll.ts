@@ -1,22 +1,29 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
-export const useScroll = () => {
-  const [scrollPosition, setScrollPosition] = useState<number[]>([0, 0])
-  const handleScroll = () => {
-    const position = window.pageYOffset
-    setScrollPosition(c => [position, c[0]])
-  }
+interface Scroll {
+  direction: number;
+}
 
+export const useScroll = (): Scroll => {
+  // Use the useState hook to store the current and previous scroll positions
+  const [scrollPositions, setScrollPositions] = useState<[number, number]>([0, 0]);
+
+  // Use the useEffect hook to add an event listener for the "scroll" event
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true })
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
+    function handleScroll() {
+      // Set the current and previous scroll positions to the current scrollY value
+      setScrollPositions((prev) => [window.scrollY, prev[0]]);
     }
-  }, [])
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Return a function that removes the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); //Add an empty dependency array to only run this effect once when the component mounts
+
 
   return {
-    position: scrollPosition[0],
-    direction: scrollPosition[1] - scrollPosition[0],
-  }
-}
+    direction: scrollPositions[1] - scrollPositions[0],
+  };
+};

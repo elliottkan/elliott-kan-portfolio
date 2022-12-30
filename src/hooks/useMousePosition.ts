@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 
-export default function useMousePosition() {
-  const [mousePosition, setMousePosition] = useState({ x: null, y: null });
+interface MousePosition {
+  x: number | null;
+  y: number | null;
+}
 
+const useMousePosition = (): MousePosition => {
+  const [mousePosition, setMousePosition] = useState<MousePosition>({ x: null, y: null });
 
   useEffect(() => {
-    const mouseMoveHandler = (event) => {
+    const mouseMoveHandler = (event: MouseEvent) => {
       const { clientX, clientY } = event;
       setMousePosition({ x: clientX, y: clientY });
     };
@@ -17,4 +21,6 @@ export default function useMousePosition() {
   }, []);
 
   return mousePosition;
-}
+};
+
+export default useMousePosition;
