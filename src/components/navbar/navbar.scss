@@ -1,34 +1,38 @@
-@media only screen and (min-width: 0px) {
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  height: 50px;
+  padding-top: 10px;
+  top: 0px;
+  align-items: center;
+  width: 100%;
+
+  .title-container {
+    margin-left: 1em;
     position: fixed;
-    height: 50px;
-    padding-top: 10px;
-    top: 0px;
-    align-items: center;
-    width: 100%;
+    z-index: 30;
+  }
 
-    .title-container {
-      margin-left: 1em;
-      position: fixed;
-      z-index: 30;
-    }
+  &:hover li a {
+    color: gray;
+  }
 
-    &:hover li a{
-      color: gray;
-    }
+  // 6. Add a transition to smooth the navbar's animation
+  transition: transform 0.2s ease-out;
+
+  // 7. Hide the navbar by using the transform property
+  &.hidden {
+    transform: translateY(-100%);
   }
 }
 
 @media only screen and (min-width: 750px) {
   .navbar-container {
-
     .title-container {
       margin-left: 2.5em;
       position: relative;
     }
-
   }
 }
