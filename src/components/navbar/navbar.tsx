@@ -9,7 +9,7 @@ import Hamburger from './hamburger';
 
 const Navbar = () => {
 
-  
+
   const LogoLink = () => {
     return (
       <h2>
@@ -19,15 +19,12 @@ const Navbar = () => {
 
   }
 
-  const []
-
   return (
     <header>
       <nav className="navbar-container">
         <div className="title-container">
           <LogoLink/>
         </div>
-          <Hamburger/>
           <Navigation />
       </nav>
     </header>

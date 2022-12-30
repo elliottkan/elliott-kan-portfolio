@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useState }from 'react';
 import "./Navigation.scss"
+import Hamburger from './hamburger';
+import MobileNavigation from './MobileNavigation';
+import NavLinks from './NavLinks';
 
 
 
@@ -25,15 +28,16 @@ const Navigation = () => {
     )
   }
 
+  const [ open, setOpen ] = useState(false)
+
   return (
     <div>
-      <div className="desktop-link-container">
-        <SectionLinks/>
-        <ResumeLink />
+      <div open={open} onClick={() => setOpen(!open)}>
+        <Hamburger/>
+        {open && <MobileNavigation/>}
       </div>
-      <div className="mobile-link-container" id="mobile-nav">
-        <SectionLinks/>
-        <ResumeLink />
+      <div className="desktop-link-container">
+       <NavLinks/>
       </div>
     </div>
   )
