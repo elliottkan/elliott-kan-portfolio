@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import TechStack from "../components/sections/techstack/techstack"
-import Header from "../components/header"
+import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer"
 import Cursor from "../components/cursor/cursor";
 import '../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf';
@@ -46,7 +46,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
       <Cursor />
-      <Header />
+      <Navbar />
       <div className="container">
       <TechStack />
       <FillerContent />

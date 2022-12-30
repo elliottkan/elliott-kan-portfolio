@@ -1,0 +1,29 @@
+.burger-container {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .burger-container {
+    width: 24px;
+    height: 20px;
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    align-items: center;
+    z-index: 20;
+
+
+    div {
+      width: 24px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  .grey-out {
+    background-color: blue;
+  }
+}
