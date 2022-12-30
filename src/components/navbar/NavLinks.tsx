@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavLinks = () => {
+const NavLinks = (props) => {
 
   const SectionLinks = () => {
     return (

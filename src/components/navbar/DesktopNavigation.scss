@@ -1,0 +1,32 @@
+// Display Desktop Navbar above 750px
+@media only screen and (min-width: 750px) {
+  .desktop-link-container {
+     display: flex;
+     align-items: center;
+     margin-right: 2em;
+
+     ul {
+       display: flex;
+       -webkit-box-pack: justify;
+       justify-content: space-between;
+       -webkit-box-align: center;
+       align-items: center;
+       padding-inline-start: 2em;
+
+       li a{
+         padding: 0.5em 1.0em;
+         text-decoration: none;
+         transition: all 0.3s ease;
+
+         &:hover {
+           color: orange;
+           text-decoration: underline;
+           text-underline-offset: 0.8em;
+         }
+       }
+     }
+   }
+   .mobile-link-container {
+     display: none;
+   }
+ }
