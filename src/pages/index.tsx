@@ -7,6 +7,7 @@ import Cursor from "../components/cursor/cursor";
 import '../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf';
 import '../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf';
 import './style.scss'
+import Hero from "../components/sections/hero/hero"
 
 const FillerContent = () => {
     return (
@@ -48,6 +49,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Cursor />
       <Navbar />
       <div className="container">
+      <Hero/>
       <TechStack />
       <FillerContent />
       </div>
