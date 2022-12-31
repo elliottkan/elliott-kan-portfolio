@@ -30,3 +30,14 @@ ol, ul, li {
   font-family: 'Space Grotesk';
   src: url(../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
 }
+
+@media only screen and (min-width: 750px) {
+
+  h1, h2, h3 {
+    font-size: 2.6em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}

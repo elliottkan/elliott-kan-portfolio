@@ -19,10 +19,10 @@
     color: gray;
   }
 
-  // 6. Add a transition to smooth the navbar's animation
+  // Add a transition to smooth the navbar's animation
   transition: transform 0.2s ease-out;
 
-  // 7. Hide the navbar by using the transform property
+  // Hide the navbar by using the transform property
   &.hidden {
     transform: translateY(-100%);
   }
@@ -35,4 +35,9 @@
       position: relative;
     }
   }
+}
+
+#logo {
+  font-size: 1.3em;
+  text-transform: uppercase;
 }

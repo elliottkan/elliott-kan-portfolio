@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const LogoLink = () => {
     return (
-      <h2>
+      <h2 id="logo">
         <a href="/">Elliott Kan</a>
       </h2>
     );
