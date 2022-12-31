@@ -2,4 +2,17 @@
   max-width: 80%;
   height: 40vh;
   margin-top: 20em;
+
+  span {
+    margin-left: 0.2em;
+    border-right: 0.3em solid;
+    color: orange;
+    animation: caret 0.5s steps(1) infinite;
+  }
+
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
 }
