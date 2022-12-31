@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 // The array that you want to iterate through and display
 const items: string[] = [
-  "I have a strong belief in the power of creativity and using code to bring those ideas to life.",
   "Welcome to my portfolio, if you have a bit of time sit back and let me tell you a bit about myself or scroll down for more",
+  "I have a strong belief in the power of creativity and using code to bring those ideas to life.",
   "I've always had a fascination with technology, so I made the switch from building design to software development.",
   "I love spending my free time exploring the great outdoors, whether it's through rock climbing, hiking or running.",
   "I'm constantly reading and learning new things, and I especially enjoy self-improvement books that help me grow as a person.",
@@ -19,7 +19,7 @@ const items: string[] = [
 const typeSpeed = 50;
 
 // The delay between each item in the array (in milliseconds)
-const itemDelay = 4000;
+const itemDelay = 8000;
 
 const TypingText = () => {
   // The current index of the item being displayed
@@ -83,7 +83,7 @@ const TypingText = () => {
   return (
     <div>
       {typedText}
-      {caratVisible && <span>|</span>}
+      {caratVisible && <span style={{color:"orange"}}>|</span>}
     </div>
   );
 }
