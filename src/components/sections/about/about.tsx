@@ -5,12 +5,12 @@ const About = () => {
 
 
   return (
-    <div className="hero-container">
-      <div>
-
+    <div className="about-container">
+      <div className="text-container">
+        <h2>Who in the world is Elliott?</h2>
       </div>
-      <div>
-
+      <div className="photo-container">
+        
       </div>
     </div>
   )
