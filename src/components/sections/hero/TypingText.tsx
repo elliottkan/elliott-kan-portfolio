@@ -16,7 +16,7 @@ class TypingText extends React.Component<Props, State> {
     super(props);
     this.state = {
       dataText: [
-        'Welcome to my portfolio, if you have a bit of time sit back and let me tell you a bit about myself or scroll down for more information',
+        'Welcome to my portfolio, if you have a bit of time sit back and let me tell you a bit about myself or scroll down for more information.',
         'I have a strong belief in the power of creativity and using code to bring those ideas to life.',
         'I\'ve always had a fascination with technology, so I made the switch from building design to software development.',
         'I love spending my free time exploring the great outdoors, whether it\'s through rock climbing, hiking or running.',
@@ -58,7 +58,7 @@ class TypingText extends React.Component<Props, State> {
         setTimeout(() => {
           this.setState({ currentTextIndex: currentTextIndex + 1, currentCharacterIndex: 0, currentText: '' });
           this.startAnimation();
-        }, 3000);
+        }, 2000);
         return;
       }
 

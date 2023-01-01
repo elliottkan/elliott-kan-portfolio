@@ -6,6 +6,10 @@
     &:hover .clickable-icon {
       color: gray;
     }
+
+    p {
+      font-size: 1em;
+    }
   }
 
   .icons-container {
@@ -14,7 +18,10 @@
     &:hover {
       filter: grayscale(100%);
     }
+
   }
+
+
 }
 
 @media only screen and (min-width: 750px) {
