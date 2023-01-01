@@ -1,6 +1,6 @@
 .container {
-  max-width: 1024px;
-  margin: 2rem auto;
+  margin: 0 1em;
+
 }
 
 html {
@@ -32,6 +32,12 @@ ol, ul, li {
 }
 
 @media only screen and (min-width: 750px) {
+
+  .container {
+    max-width: 1200px;
+    padding: 2em;
+    margin: 0 auto;
+  }
 
   h1, h2, h3 {
     font-size: 2.6em;

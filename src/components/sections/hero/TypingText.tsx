@@ -26,7 +26,7 @@ class TypingText extends React.Component<Props, State> {
         'I\'ve always been drawn to the world of code and the endless possibilities it offers for creation and problem-solving.',
         'I\'m a huge fan of the outdoors, and I love finding new ways to connect with nature and push my limits.',
         'I believe in constantly learning and growing, and I try to incorporate that mindset into everything I do, whether it\'s in my work or personal life.',
-        `That\'s enough about me, get in touch with me so I can get to know more about you!`,
+        `That\'s enough about me, get in touch with me at so I can get to know more about you!`,
       ],
       currentText: '',
       currentTextIndex: 0,
