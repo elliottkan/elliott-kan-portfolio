@@ -8,6 +8,7 @@ import '../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf';
 import '../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf';
 import './style.scss'
 import Hero from "../components/sections/hero/hero"
+import About from "../components/sections/about/about"
 
 const FillerContent = () => {
     return (
@@ -50,6 +51,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Navbar />
       <div className="container">
       <Hero/>
+      <About  />
       <TechStack />
       <FillerContent />
       </div>

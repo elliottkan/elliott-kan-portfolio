@@ -1,5 +1,6 @@
 import React from 'react';
-import './about.scss'
+import './about.scss';
+import Headshot from '/assets/elliott-headshot.jpg';
 
 const About = () => {
 
@@ -11,7 +12,7 @@ const About = () => {
         <p></p>
       </div>
       <div className="photo-container">
-        <img src="elliott-headshot" alt="elliott-headshot" />
+        <img src={Headshot} />
       </div>
     </div>
   )
