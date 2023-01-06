@@ -11,6 +11,7 @@ body {
 }
 h1, h2, h3 {
   font-family: "Roboto Mono";
+  font-size: 2em;
 }
 a {
   color: black;
@@ -31,7 +32,7 @@ ol, ul, li {
   src: url(../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 950px) {
 
   .container {
     max-width: 1200px;
@@ -43,7 +44,4 @@ ol, ul, li {
     font-size: 2.6em;
   }
 
-  p {
-    font-size: 1.2em;
-  }
 }

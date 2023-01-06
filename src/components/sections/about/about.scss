@@ -3,6 +3,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 100px;
+
+  p {
+    margin-top: 2.5rem;
+  }
 }
 
 .text-container {
@@ -15,15 +19,13 @@
   grid-row: 1;
 }
 
-p {
-  margin-top: 2.5rem;
-  font-size: 1em;
-}
+
 
 img {
   width: 100%;
 }
-@media (max-width: 750px) {
+
+@media (max-width: 950px) {
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -36,5 +38,7 @@ img {
   .photo-container {
     grid-column: 1;
     grid-row: 2;
+    height: 70vh;
+    overflow: hidden;
   }
 }
