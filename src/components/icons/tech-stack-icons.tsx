@@ -4,59 +4,59 @@ import * as SiIcons from 'react-icons/si';
 
 export const techStackIcons = [
   {
-    icon: <DiIcons.DiReact />,
+    icon: <DiIcons.DiReact size={60}/>,
     name: "React",
   },
   {
-    icon: <DiIcons.DiHtml5 />,
+    icon: <DiIcons.DiHtml5 size={60}/>,
     name: "HTML",
   },
   {
-    icon: <DiIcons.DiCss3 />,
+    icon: <DiIcons.DiCss3 size={60}/>,
     name: "CSS",
   },
   {
-    icon: <DiIcons.DiJsBadge />,
+    icon: <DiIcons.DiJsBadge size={60}/>,
     name: "Javascript",
   },
   {
-    icon: <SiIcons.SiTypescript />,
+    icon: <SiIcons.SiTypescript size={60}/>,
     name: "Typescript",
   },
   {
-    icon: <DiIcons.DiSass />,
+    icon: <DiIcons.DiSass size={60}/>,
     name: "Sass",
   },
   {
-    icon: <SiIcons.SiTailwindcss />,
+    icon: <SiIcons.SiTailwindcss size={60}/>,
     name: "Tailwind",
   },
   {
-    icon: <DiIcons.DiBootstrap />,
+    icon: <DiIcons.DiBootstrap size={60}/>,
     name: "Bootstrap",
   },
   {
-    icon: <DiIcons.DiRubyRough />,
+    icon: <DiIcons.DiRubyRough size={60}/>,
     name: "Ruby",
   },
   {
-    icon: <DiIcons.DiRor />,
+    icon: <DiIcons.DiRor size={60}/>,
     name: "Ruby on Rails",
   },
   {
-    icon: <DiIcons.DiPostgresql />,
+    icon: <DiIcons.DiPostgresql size={60}/>,
     name: "PostgreSQL",
   },
   {
-    icon: <DiIcons.DiSqllite />,
+    icon: <DiIcons.DiSqllite size={60}/>,
     name: "SQLite",
   },
   {
-    icon: <DiIcons.DiVisualstudio />,
+    icon: <DiIcons.DiVisualstudio size={60}/>,
     name: "VSCode",
   },
   {
-    icon: <DiIcons.DiGitBranch />,
+    icon: <DiIcons.DiGitBranch size={60}/>,
     name: "Git",
   }
 ]

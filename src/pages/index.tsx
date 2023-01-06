@@ -10,40 +10,6 @@ import './style.scss'
 import Hero from "../components/sections/hero/hero"
 import About from "../components/sections/about/about"
 
-const FillerContent = () => {
-    return (
-      <div>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-        <h1>MASSIVE CONTENT</h1>
-      </div>
-    )
-  }
-
-
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main>
@@ -53,7 +19,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero/>
       <About  />
       <TechStack />
-      <FillerContent />
       </div>
       <Footer />
     </main>
