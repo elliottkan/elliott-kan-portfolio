@@ -1,6 +1,5 @@
 .container {
   margin: 0 1em;
-
 }
 
 html {
@@ -8,28 +7,52 @@ html {
 }
 body {
   font-family: "Space Grotesk";
+  font-weight: 400;
 }
 h1, h2, h3 {
   font-family: "Roboto Mono";
   font-size: 2em;
+  font-weight: 600;
 }
 a {
   color: black;
   text-decoration: none;
 }
 
+strong {
+  font-weight: 600;
+}
+
 ol, ul, li {
   list-style: none;
+}
+
+.yellow-underline {
+  text-decoration: underline;
 }
 
 @font-face {
   font-family: 'Roboto Mono';
   src: url(../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url(../fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf) format('truetype');
+  font-weight: 600;
 }
 
 @font-face {
   font-family: 'Space Grotesk';
   src: url(../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 950px) {
