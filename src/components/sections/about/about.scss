@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 100px;
 }
 
 .text-container {
@@ -13,6 +13,11 @@
 .photo-container {
   grid-column: 2;
   grid-row: 1;
+}
+
+p {
+  margin-top: 2.5rem;
+  font-size: 1em;
 }
 
 img {
