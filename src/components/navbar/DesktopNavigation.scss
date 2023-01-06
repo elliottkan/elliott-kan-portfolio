@@ -19,9 +19,12 @@
          transition: all 0.3s ease;
 
          &:hover {
-           color: orange;
+           color: black;
            text-decoration: underline;
-           text-underline-offset: 0.8em;
+           text-decoration-color: orange;
+           text-decoration-thickness: 0.2em;
+           text-underline-offset: 0.3em;
+
          }
        }
      }
