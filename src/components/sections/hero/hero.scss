@@ -4,18 +4,16 @@
 
   p {
     margin-top: 3em;
-  }
-
-  @media only screen and (min-width: 950px) {
-
-    margin-top: 20em;
-
-    p {
-      margin-top: 0;
-    }
+    font-size: 1.3em;
   }
 
   span {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 0.1em;
+  }
+
+  .carat-keyframe {
     margin-left: 0.2em;
     border-right: 0.3em solid;
     color: orange;
@@ -27,4 +25,15 @@
       border-color: transparent;
     }
   }
-}
+
+  @media only screen and (min-width: 950px) {
+
+    margin-top: 20em;
+
+    p {
+      margin-top: 2.2em;
+    }
+
+
+  }
+  }

@@ -67,14 +67,14 @@ class TypingText extends React.Component<Props, State> {
         currentText: dataText[currentTextIndex].substring(0, currentCharacterIndex + 1),
         currentCharacterIndex: currentCharacterIndex + 1,
       });
-    }, 50);
+    }, 30);
   };
 
   render() {
     return (
       <p>
         {this.state.currentText}
-        <span aria-hidden={true} />
+        <span className="carat-keyframe" aria-hidden={true} />
       </p>
     );
   }
