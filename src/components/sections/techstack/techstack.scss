@@ -1,9 +1,45 @@
 .techstack-container {
+  .tech-name {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 28%;
+    right: 2%;
+    line-height: 1em;
+    text-align: center;
+  }
 
   ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+
+    li {
+      padding: 10px;
+      position: relative;
+      color: #d3d3d3;
+
+      &:hover {
+        color: #d3d3d37f;
+
+      }
+
+      &:hover .tech-name {
+        opacity: 100%;
+        color: orange;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: 600;
   }
 }

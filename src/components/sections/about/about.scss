@@ -3,10 +3,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-gap: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 
   p {
-    margin-top: 2.5em;
+    margin-top: 2.2em;
 
     span {
       font-weight: 700;
@@ -46,6 +46,7 @@ img {
 @media (max-width: 950px) {
   .about-container {
     grid-template-columns: 1fr;
+    padding-bottom: 0px;
   }
 
   .text-container {

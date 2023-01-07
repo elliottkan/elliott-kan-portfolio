@@ -4,10 +4,12 @@ import './techstack.scss'
 const TechStack = () => {
   return (
     <div className="techstack-container">
+      <h2>Some of the technology I've used:</h2>
       <ul className="icons">
         {techStackIcons.map(({ icon, name }) => (
             <li>
-              {icon}
+              <p>{icon}</p>
+              <p className="tech-name"> { name }</p>
             </li>
           ))}
       </ul>

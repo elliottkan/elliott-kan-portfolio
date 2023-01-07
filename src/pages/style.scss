@@ -1,6 +1,4 @@
-body {
-  margin: 0;
-}
+
 .container {
   margin: 0 1em;
 }
@@ -25,11 +23,15 @@ h1 {
 h2, h3 {
   font-size: 3em;
 }
+
 a {
   color: black;
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5em;
+}
 strong {
   font-weight: 600;
 }
