@@ -9,6 +9,7 @@ import '../fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf';
 import './style.scss'
 import Hero from "../components/sections/hero/hero"
 import About from "../components/sections/about/about"
+import Jobs from "../components/sections/jobs/jobs"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero/>
       <About  />
       <TechStack />
+      <Jobs />
       </div>
       <Footer />
     </main>
