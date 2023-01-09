@@ -11,7 +11,7 @@ const Jobs = () => {
     { id: 3, content: "Henley Properties" },
     { id: 4, content: "Earthlift Excavations" },
   ];
-
+  
   return (
     <div>
       {/* Render the 5 selectable containers */}
