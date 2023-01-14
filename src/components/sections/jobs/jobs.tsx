@@ -6,14 +6,15 @@ const Jobs = () => {
 
   // Declare an array of 5 items
   const items = [
-    { id: 1, content: "Content 1" },
-    { id: 2, content: "Content 2" },
-    { id: 3, content: "Content 3" },
-    { id: 4, content: "Content 4" },
-    { id: 5, content: "Content 5" },
+    { id: 1, content: "Current -" },
+    { id: 2, content: "Anchor Homes" },
+    { id: 3, content: "Henley Properties" },
+    { id: 4, content: "Earthlift Excavations" },
   ];
 
   return (
+
+    // TOOD - Restyle Containers
     <div>
       {/* Render the 5 selectable containers */}
       {items.map((item) => (
@@ -42,7 +43,7 @@ const Jobs = () => {
         }}
       >
         {/* Render the content of the current item */}
-        <p>{items[activeIndex].content}</p>
+        <p>{ items[activeIndex].content}</p>
       </div>
     </div>
   );
