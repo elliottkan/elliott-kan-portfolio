@@ -1,4 +1,27 @@
-<p align="center">
+<h2>Elliott's Portfolio Website </h2>
+
+Design and developed by me! The objective of this portfolio was to create a portfolio website while gaining proficiency working with React and Typescript.
+
+This app has been completed with the following:
+<ul>
+<li>Front-end: Typescript/Javascript, React, SCSS, HTML, Tailwind
+<li>Hosted on: Fly.io
+<li>Design & Development: Figma
+</ul>
+
+My LINKEDIN:
+<p>https://www.linkedin.com/in/elliottkan/
+
+---
+
+License
+
+Copyright (c) 2022-present Elliott Kan. All rights reserved.
+
+The code, design and articles in this repository are intellectual property of the individual mentioned above (unless otherwise stated) and as such CANNOT be copied, modified, sublicensed or redistributed without permission from the author.
+
+---
+p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
