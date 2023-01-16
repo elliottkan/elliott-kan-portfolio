@@ -1,0 +1,71 @@
+.experience-container {
+
+
+
+  .jobs-container {
+
+    @media only screen and (max-width: 950px) {
+      .job-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow: auto;
+        grid-gap: 50px;
+        width: 100%;
+
+        .selectable-jobs {
+          display: inline-block;
+          min-width: 180px;
+        }
+      }
+    }
+
+
+    @media only screen and (min-width: 950px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 50px;
+
+
+      .job-tab {
+        position: relative;
+        min-height: 80px;
+      }
+
+      .active-job {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: orange;
+        width: 5px;
+        z-index: 10;
+        transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition-delay: 0.1s;
+      }
+
+      .non-active-job {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: rgba(128, 128, 128, 0.197);
+        width: 5px;
+        z-index: 10;
+        transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition-delay: 0.1s;
+      }
+
+      .selectable-jobs {
+        grid-column: 2;
+        grid-row: 1;
+        height: 100%;
+
+      }
+      .job-description {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+      }
+    }
+  }
+}

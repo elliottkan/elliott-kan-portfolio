@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./jobs.scss"
 
 const Jobs = () => {
   // Declare a state variable called 'activeIndex' with an initial value of 0
@@ -6,44 +7,77 @@ const Jobs = () => {
 
   // Declare an array of 5 items
   const items = [
-    { id: 1, content: "Current -" },
-    { id: 2, content: "Anchor Homes" },
-    { id: 3, content: "Henley Properties" },
-    { id: 4, content: "Earthlift Excavations" },
+    { company: "Current", range: "December 2022 - Now " },
+    { company: "Anchor Homes", range: "December 2021 - December 2022" },
+    { company: "Henley Properties", range: "February 2018 - December 2021" },
+    { company: "Earthlift Excavations", range: "July 2017 - March 2018" },
   ];
 
+  const CurrentJob = () => (
+    <>
+    <h3>Kando Studio | Freelancing | Contracting</h3>
+    <h4>Software Development </h4>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    </>
+  )
+  const AnchorHomes = () => (
+    <p>Anchor HOMES LOL</p>
+  )
+  const HenleyHomes = () => (
+    <p>HenleyHOEMS LOL</p>
+  )
+  const EarthliftExcavations = () => (
+    <p>Earthlift LOL</p>
+  )
+
+  const StyledHighlight = () => (
+    <div className="active-job"></div>
+  )
+  const GrayHighlight = () => (
+    <div className="non-active-job"></div>
+  )
+
+  const RenderCurrentJob = () => {
+    switch (activeIndex) {
+      case 0:
+        return <CurrentJob />;
+      case 1:
+        return <AnchorHomes />;
+      case 2:
+        return <HenleyHomes />;
+      case 3:
+        return <EarthliftExcavations />;
+      default:
+        return <CurrentJob />;
+    }
+  }
+
   return (
-
-    // TOOD - Restyle Containers
-    <div>
-      {/* Render the 5 selectable containers */}
-      {items.map((item) => (
-        <div
-          key={item.id}
-          className="selectable-container"
-          onClick={() => setActiveIndex(item.id - 1)}
-          style={{
-            width: "100px",
-            height: "100px",
-            backgroundColor: item.id - 1 === activeIndex ? "darkgray" : "lightgray",
-          }}
-        >
-          {/* Render the content of the item */}
-          <p>{item.content}</p>
+    <div className="experience-container">
+      <div>
+        <h3>Experience</h3>
+        <span></span>
+      </div>
+      <div className="jobs-container">
+        <div className="job-list">
+          {items.map((item, index) => (
+            <div className="job-tab">
+              <div key={item.index} className="selectable-jobs" onClick={() => setActiveIndex(index)} >
+                <p>{item.company}</p>
+                {activeIndex === index && <p>{item.range}</p>}
+              </div>
+              { activeIndex === index ? <StyledHighlight/> : <GrayHighlight/> }
+            </div>
+          ))}
         </div>
-      ))}
-
-      {/* Render the main container */}
-      <div
-        className="container"
-        style={{
-          width: "100px",
-          height: "100px",
-          backgroundColor: "lightgray",
-        }}
-      >
-        {/* Render the content of the current item */}
-        <p>{ items[activeIndex].content}</p>
+        <div className="job-description">
+          {/* Render the description of the active selection */}
+          <RenderCurrentJob/>
+        </div>
       </div>
     </div>
   );
