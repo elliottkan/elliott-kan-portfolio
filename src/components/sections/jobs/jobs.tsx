@@ -16,9 +16,9 @@ const Jobs = () => {
   const CurrentJob = () => (
     <>
     <h3>Kando Studio | Freelancing | Contracting</h3>
-    <h4>Software Development </h4>
+    <h4>Web Development</h4>
     <ul>
-      <li></li>
+      <li>Website design and development</li>
       <li></li>
       <li></li>
     </ul>
