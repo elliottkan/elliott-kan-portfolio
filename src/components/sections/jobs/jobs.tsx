@@ -25,13 +25,34 @@ const Jobs = () => {
     </>
   )
   const AnchorHomes = () => (
-    <p>Anchor HOMES LOL</p>
+    <>
+    <h3>Building Designer</h3>
+    <ul>
+      <li>Website design and development</li>
+      <li></li>
+      <li></li>
+    </ul>
+    </>
   )
   const HenleyHomes = () => (
-    <p>HenleyHOEMS LOL</p>
+    <>
+    <h3>Architectural Draftsperson</h3>
+    <ul>
+      <li>Website design and development</li>
+      <li></li>
+      <li></li>
+    </ul>
+    </>
   )
   const EarthliftExcavations = () => (
-    <p>Earthlift LOL</p>
+    <>
+    <h3>Estimating and Drafting</h3>
+    <ul>
+      <li>Website design and development</li>
+      <li></li>
+      <li></li>
+    </ul>
+    </>
   )
 
   const StyledHighlight = () => (
