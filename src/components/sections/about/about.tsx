@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.scss';
-import Headshot from '../../../assets/elliott-headshot.jpg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const About = () => {
 
@@ -36,7 +36,7 @@ const About = () => {
         <p>Or flick me an email at < EmailLink />.</p>
       </div>
       <div className="photo-container">
-        <img src={Headshot} alt="handsome man headshot" />
+        <StaticImage src='../../../assets/elliott-headshot.jpg' placeholder="blurred" alt="A Handsome man called Elliott" />
       </div>
     </div>
   )

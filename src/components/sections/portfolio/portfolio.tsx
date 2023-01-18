@@ -1,19 +1,24 @@
 import React from "react";
 import "./portfolio.scss"
+
 const Portfolio = () => {
+
   return (
     <div className="project-container">
-      <h3>Some stuff I've built</h3>
+      <h3>Some Stuff I've Built</h3>
       <div className="project">
         <div className="project-content">
-          <div className="project-label">Game of Thrones</div>
-          <h4 className="project-title">A Clash of Kings</h4>
+          {/* <div className="project-label">Fullstack App</div> */}
+          <h4 className="project-title">TakeStock</h4>
           <div className="project-details">
-            <p>Lorem ipsum dolor amet you probably haven't heard of them bitters selvage listicle heirloom. Locavore kombucha street art ennui 90's, organic food truck hell of seitan skateboard literally hexagon fixie next level. Lomo salvia yuccie hella roof party echo park vegan four dollar toast cred.</p>
+            <p>A platform that serves as an aggregator for social media, news and price charts to allow users to perform quicker market research.</p>
+            <p>Check this project out on github, here.</p>
+            <p>Or head to the website directly,</p>
             <ul>
-              <li>Shadow</li>
-              <li>Demon</li>
-              <li>Baby</li>
+              <li>Ruby on Rails</li>
+              <li>Tailwind</li>
+              <li>Javascript</li>
+              <li>Heroku</li>
             </ul>
           </div>
         </div>

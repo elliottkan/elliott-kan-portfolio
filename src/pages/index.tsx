@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { graphql, HeadFC, PageProps } from "gatsby"
 import TechStack from "../components/sections/techstack/techstack"
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer"
@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Navbar />
       <div className="container">
       <Hero/>
-      <About  />
+      <About/>
       <TechStack />
       <Jobs />
       <Portfolio/>
