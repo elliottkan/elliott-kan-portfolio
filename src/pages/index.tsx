@@ -10,6 +10,7 @@ import './style.scss'
 import Hero from "../components/sections/hero/hero"
 import About from "../components/sections/about/about"
 import Jobs from "../components/sections/jobs/jobs"
+import Portfolio from "../components/sections/portfolio/portfolio"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -21,6 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <About  />
       <TechStack />
       <Jobs />
+      <Portfolio/>
       </div>
       <Footer />
     </main>

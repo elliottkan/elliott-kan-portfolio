@@ -7,51 +7,54 @@ const Jobs = () => {
 
   // Declare an array of 5 items
   const items = [
-    { company: "Current", range: "December 2022 - Now " },
-    { company: "Anchor Homes", range: "December 2021 - December 2022" },
-    { company: "Henley Properties", range: "February 2018 - December 2021" },
-    { company: "Earthlift Excavations", range: "July 2017 - March 2018" },
+    { role: "Web Developer & Designer", company: "Kando Studio", range: "2022 -  " },
+    { role: "Building Designer", company: "Anchor Homes", range: "2021 - 2022" },
+    { role: "Architectural Draftsperson", company: "Henley Properties", range: "2018 - 2021" },
+    { role: "Estimator & Draftsperson", company: "Earthlift Excavations", range: "2017 - 2018" },
   ];
+
+  const EmailLink = () => {
+    return (
+      <a href="mailto:elliottkan7@gmail.com">here</a>
+    )
+  }
+
+  const ResumeLink = () => {
+    return (
+      <a
+          className=""
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here.
+      </a>
+    )
+  }
 
   const CurrentJob = () => (
     <>
-    <h3>Kando Studio | Freelancing | Contracting</h3>
-    <h4>Web Development</h4>
-    <ul>
-      <li>Website design and development</li>
-      <li></li>
-      <li></li>
-    </ul>
+      <p>Currently, I am a web designer and developer at KandoStudio. Each day brings new and exciting challenges as I work on a diverse range of projects for clients seeking to establish or enhance their online presence.</p>
+      <p>These projects encompass a wide range of responsibilities, including sales, market research, design, development and hosting. </p>
+      <p>To accomplish these tasks, I utilize tools such as Figma, React and GatsbyJS for design and development.</p>
+      {/* <p>Background in the Shopify platform for e-commerce clients.</p> */}
     </>
   )
   const AnchorHomes = () => (
     <>
-    <h3>Building Designer</h3>
-    <ul>
-      <li>Website design and development</li>
-      <li></li>
-      <li></li>
-    </ul>
+      <p>Building Designer for a Prefab Transportable Modular Home builder where my role was to communicate with multi-disciplinary teams of engineers, consultants, tradespeople, council and clients on a daily basis. My main responsibility was to produce quality and accessible working drawings for a diverse array of clients. Additionally, I also worked to improve company drafting practices and processes to ensure that the company was providing the best service to clients.</p>
     </>
   )
   const HenleyHomes = () => (
     <>
-    <h3>Architectural Draftsperson</h3>
-    <ul>
-      <li>Website design and development</li>
-      <li></li>
-      <li></li>
-    </ul>
+      <p>As an Architectural Draftsperson for one of Victoria's largest award-winning builders, I had the opportunity to acquire a wide range of technical and interpersonal skills during my tenure at Henley Properties. </p>
+      <p>My main focus was meeting deadlines, KPIs and providing great customer service, while also seeking to improve my skills. My responsibilities included preparing detailed drawings and managing interactions with team members, contractors and stakeholders involved in the project.</p>
     </>
   )
   const EarthliftExcavations = () => (
     <>
-    <h3>Estimating and Drafting</h3>
-    <ul>
-      <li>Website design and development</li>
-      <li></li>
-      <li></li>
-    </ul>
+      <p>Estimator and Draftsperson at a civil earthmoving company</p>
+      <p>I was responsible for preparing cost estimates and working drawings for site operations, reviewing outsourced work for quality control, communicating with other builders to ensure requirements are met, investigating queries and escalating errors for resolution.</p>
     </>
   )
 
@@ -79,17 +82,17 @@ const Jobs = () => {
 
   return (
     <div className="experience-container">
-      <div>
+      <div className="flex align-center">
         <h3>Experience</h3>
-        <span></span>
       </div>
       <div className="jobs-container">
         <div className="job-list">
           {items.map((item, index) => (
             <div className="job-tab">
               <div key={item.index} className="selectable-jobs" onClick={() => setActiveIndex(index)} >
+                <p>{item.range}</p>
+                <p>{item.role}</p>
                 <p>{item.company}</p>
-                {activeIndex === index && <p>{item.range}</p>}
               </div>
               { activeIndex === index ? <StyledHighlight/> : <GrayHighlight/> }
             </div>
@@ -98,6 +101,7 @@ const Jobs = () => {
         <div className="job-description">
           {/* Render the description of the active selection */}
           <RenderCurrentJob/>
+          <p>Got an opportunity to discuss? Chuck us an email < EmailLink /> or check out my resume, < ResumeLink/></p>
         </div>
       </div>
     </div>
