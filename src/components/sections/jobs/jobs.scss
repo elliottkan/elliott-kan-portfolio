@@ -1,8 +1,55 @@
 .experience-container {
-  
+
+  padding-top: 6rem;
+
+  a {
+    font-weight: 600;
+
+    &:hover {
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: orange;
+      text-decoration-thickness: 0.2em;
+      text-underline-offset: 0.3em;
+    }
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .selectable-jobs {
+    // Date
+    p:nth-child(1){
+      font-size: 1.0rem;
+    }
+    // Role
+    p:nth-child(2){
+      padding-top: 0.8rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    // Company
+    p:nth-child(3){
+      padding-top: 0.2rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  .job-description {
+    p {
+      margin-top: 3rem;
+    }
+  }
+
   .job-tab {
     position: relative;
-    min-height: 80px;
+    min-height: 100px;
+    padding-bottom: 2.5rem;
+
+    &:hover .non-active-job{
+      background: rgba(255, 166, 0, 0.419);
+    }
   }
 
   .jobs-container {
@@ -32,6 +79,7 @@
         transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         transition-delay: 0.1s;
       }
+
       .non-active-job {
         position: absolute;
         bottom: 0;
@@ -51,7 +99,8 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
-      grid-gap: 50px;
+      grid-gap: 100px;
+
 
 
 
@@ -88,6 +137,10 @@
       .job-description {
         grid-column: 1 / span 2;
         grid-row: 1;
+
+        p {
+          margin-top: 2rem;
+        }
       }
     }
   }

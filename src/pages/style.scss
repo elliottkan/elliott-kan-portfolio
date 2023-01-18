@@ -29,6 +29,24 @@ a {
   text-decoration: none;
 }
 
+.horizontal-line {
+  height: 2.0px;
+  margin-top: 0;
+  margin-left: 1vw;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: rgba(255, 166, 0, 0.305);
+}
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
 p {
   line-height: 1.5em;
   margin-block-start: 0em;
