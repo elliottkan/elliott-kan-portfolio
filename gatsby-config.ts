@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+const path = require(`path`)
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -15,9 +16,19 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/assets/favicons/favicon.png',
+        icon: `${__dirname}/src/assets/favicons/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
   ]
 };
 
