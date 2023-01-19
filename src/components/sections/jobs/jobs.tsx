@@ -81,7 +81,7 @@ const Jobs = () => {
   }
 
   return (
-    <div className="experience-container">
+    <div className="experience-container" id="experience">
       <div className="flex align-center">
         <h3>Experience</h3>
       </div>
@@ -101,7 +101,7 @@ const Jobs = () => {
         <div className="job-description">
           {/* Render the description of the active selection */}
           <RenderCurrentJob/>
-          <p>Got an opportunity to discuss? Chuck us an email < EmailLink /> or check out my resume, < ResumeLink/></p>
+          {/* <p>Got an opportunity to discuss? Chuck us an email < EmailLink /> or check out my resume, < ResumeLink/></p> */}
         </div>
       </div>
     </div>

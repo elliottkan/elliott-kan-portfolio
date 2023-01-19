@@ -21,7 +21,7 @@ h1 {
 }
 
 h2, h3 {
-  font-size: 3em;
+  font-size: 2rem;
 }
 
 a {
@@ -98,8 +98,11 @@ ol, ul, li {
     margin: 0 auto;
   }
 
-  h1, h2, h3 {
-    font-size: 4em;
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2, h3 {
+    font-size: 2.5rem;
   }
 
 }

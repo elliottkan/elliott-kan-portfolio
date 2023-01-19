@@ -25,7 +25,7 @@ const About = () => {
 
 
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <div className="text-container">
         <h2>Who in the world is Elliott?</h2>
         <p>Hey there!</p>
