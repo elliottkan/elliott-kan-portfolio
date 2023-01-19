@@ -130,7 +130,7 @@ const Portfolio = () => {
 )
   return (
     <div className="project-container" id="portfolio">
-      <h3>Some Stuff I've Built</h3>
+      <h3>Some Stuff I've Built<span className="orange">.</span></h3>
       <TakeStock/>
       <Gearless/>
       <CommunityCode/>

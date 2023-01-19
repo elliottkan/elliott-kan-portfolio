@@ -42,7 +42,8 @@ const Jobs = () => {
   )
   const AnchorHomes = () => (
     <>
-      <p>Building Designer for a Prefab Transportable Modular Home builder where my role was to communicate with multi-disciplinary teams of engineers, consultants, tradespeople, council and clients on a daily basis. My main responsibility was to produce quality and accessible working drawings for a diverse array of clients. Additionally, I also worked to improve company drafting practices and processes to ensure that the company was providing the best service to clients.</p>
+      <p>Building Designer for a Prefab Transportable Modular Home builder where my role was to communicate with multi-disciplinary teams of engineers, consultants, tradespeople, council and clients on a daily basis.</p>
+      <p>My main responsibility was to produce quality and accessible working drawings for a diverse array of clients. Additionally, I also worked to improve company drafting practices and processes to ensure that the company was providing the best service to clients.</p>
     </>
   )
   const HenleyHomes = () => (
@@ -53,7 +54,7 @@ const Jobs = () => {
   )
   const EarthliftExcavations = () => (
     <>
-      <p>Estimator and Draftsperson at a civil earthmoving company</p>
+      <p>Estimator and Draftsperson at a civil earthmoving company.</p>
       <p>I was responsible for preparing cost estimates and working drawings for site operations, reviewing outsourced work for quality control, communicating with other builders to ensure requirements are met, investigating queries and escalating errors for resolution.</p>
     </>
   )
@@ -83,7 +84,7 @@ const Jobs = () => {
   return (
     <div className="experience-container" id="experience">
       <div className="flex align-center">
-        <h3>Experience</h3>
+        <h3>Experience<span className="orange">.</span></h3>
       </div>
       <div className="jobs-container">
         <div className="job-list">

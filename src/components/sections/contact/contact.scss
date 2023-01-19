@@ -1,0 +1,27 @@
+.contact-container {
+  margin-top: 150px;
+  padding-bottom: 150px;
+  width: 40%;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
+
+  p {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: rgb(69, 68, 68);
+  }
+  .link {
+    font-size: 1rem;
+    font-weight: 600;
+
+    &:hover {
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: orange;
+      text-decoration-thickness: 0.2em;
+      text-underline-offset: 0.3em;
+    }
+  }
+}

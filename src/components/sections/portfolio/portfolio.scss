@@ -1,7 +1,7 @@
 .project-container {
 
   h3 {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   padding-top: 5rem;
   a {
@@ -66,7 +66,7 @@
     // grid-gap: 50px;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    margin-top: 100px;
+    margin-bottom: 120px;
 
     @media screen and (max-width: 950px) {
       align-items: flex-start;
@@ -146,6 +146,7 @@
     position: relative;
     z-index: 1;
 
+
     @media (max-width: 950px) {
       grid-column: 1 / -1;
       height: 100%;
@@ -154,8 +155,6 @@
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
-      border-radius: var(--border-radius);
       vertical-align: middle;
       &:hover,
       &:focus {
@@ -169,7 +168,13 @@
       }
     }
     .img {
-      filter: grayscale(100%) contrast(1) brightness();
+      filter: grayscale(100%) contrast(1) brightness(96%);
+      transition: ease-in-out 150ms;
+      &:hover{
+        transform: scale(1.02);
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(228,228,228,0.5);
+        box-shadow: 5px 5px 15px 5px rgba(228,228,228,0.5);
+      }
       @media (max-width: 950px) {
         filter: blur(2px);
         object-fit: cover;
