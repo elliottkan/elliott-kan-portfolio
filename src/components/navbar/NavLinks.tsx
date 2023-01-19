@@ -1,27 +1,37 @@
+import { Link } from "gatsby";
 import React from "react";
 
-const NavLinks: React.FC = () => {
+const NavLinks = () => {
 
-  const SectionLinks: React.FC = () => {
+  const SectionLinks = () => {
     return (
+
       <ul>
         <li>
-          <a href="#about">About</a>
+        <Link to="#about">
+          About
+        </Link>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+        <Link to="#experience">
+          Experience
+        </Link>
         </li>
         <li>
-          <a href="#work">Work</a>
+        <Link to="#portfolio">
+          Work
+        </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+        <Link to="#contact">
+          Contact
+        </Link>
         </li>
       </ul>
     );
   };
 
-  const ResumeLink: React.FC = () => {
+  const ResumeLink = () => {
     return (
       <div>
         <a
