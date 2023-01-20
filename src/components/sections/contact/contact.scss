@@ -16,12 +16,23 @@
     font-size: 1rem;
     font-weight: 600;
 
-    &:hover {
-      color: black;
-      text-decoration: underline;
-      text-decoration-color: orange;
-      text-decoration-thickness: 0.2em;
-      text-underline-offset: 0.3em;
-    }
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }
