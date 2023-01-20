@@ -1,5 +1,5 @@
 import * as React from "react"
-import { HeadFC, PageProps } from "gatsby"
+import { graphql, HeadFC, PageProps } from "gatsby"
 import TechStack from "../components/sections/techstack/techstack"
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer"
