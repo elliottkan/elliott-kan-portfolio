@@ -16,29 +16,17 @@
        li a{
          padding: 0.5em 1.0em;
          text-decoration: none;
+         transition: all 0.3s ease;
 
          &:hover {
-          color: black;
+           color: black;
+           text-decoration: underline;
+           text-decoration-color: orange;
+           text-decoration-thickness: 0.2em;
+           text-underline-offset: 0.3em;
+
          }
        }
-
-       a::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        background-color: orange;
-        transform-origin: bottom left;
-        transition: transform 0.25s ease-out;
-      }
-
-      a:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
      }
    }
    .mobile-link-container {
