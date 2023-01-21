@@ -7,7 +7,7 @@ const NavLinks = () => {
     return (
 
       <ul>
-        <li>
+        <li >
         <Link to="#about">
           About
         </Link>

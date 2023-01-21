@@ -13,7 +13,6 @@ const Hamburger = () => {
       <div
           className="burger-container-closed"
           id="burger"
-          open={open}
           onClick={toggleOpen}
         >
         <div></div>
@@ -28,7 +27,6 @@ const Hamburger = () => {
       <div
           className="burger-container-open"
           id="burger"
-          open={open}
           onClick={toggleOpen}
         >
         <div></div>
