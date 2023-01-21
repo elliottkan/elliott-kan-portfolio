@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-sass",
-    "gatsby-plugin-google-gtag",
+    // "gatsby-plugin-google-gtag",
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

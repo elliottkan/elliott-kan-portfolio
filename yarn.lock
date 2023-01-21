@@ -5425,7 +5425,7 @@ gatsby-plugin-favicons@^1.0.4:
   dependencies:
     favicons-webpack-plugin "^0.0.9"
 
-gatsby-plugin-google-gtag@^5.3.0:
+gatsby-plugin-google-gtag@^5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.4.0.tgz#3ba7f230e67dbdf5160e16c2e79bb94d0541c2cc"
   integrity sha512-O++yAA0XENpcxy/rJtw5y0Rgqmbw/zE/oXPI/9szazXHukpD41kgWj56aWj/EOD3vlWK8ubjvxNyXdceHPb0xA==
