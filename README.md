@@ -42,4 +42,4 @@ The code, design and articles in this repository are intellectual property of th
 
 ---
 
-Crafted in Melbourne, Australia. I acknowledge this country’s First Nations peoples and their ongoing strength in practising the world’s oldest living culture. I acknowledge the Traditional Owners of the land on which I practice from, The Wurundjeri people of the Kulin Nation, and pay our respects to Elders past and present.
+Crafted in Melbourne, Australia. I acknowledge this country’s First Nations peoples and their ongoing strength in practising the world’s oldest living culture. I acknowledge the Traditional Owners of the land on which I practice from, The Wurundjeri people of the Kulin Nation, and pay my respects to Elders past and present.
