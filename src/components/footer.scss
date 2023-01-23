@@ -2,6 +2,7 @@
   .footer-container {
     position: relative;
     text-align: center;
+    z-index: 100;
 
     &:hover .clickable-icon {
       color: gray;
