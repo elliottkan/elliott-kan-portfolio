@@ -11,7 +11,7 @@ const Portfolio = () => {
   const TakeStock = () => (
       <div className="project">
         <div className="project-content">
-          <div className="project-label">Fullstack Application</div>
+          <div className="project-label">Fullstack Application - Design & Development</div>
           <h4 className="project-title">TakeStock</h4>
           <div className="project-details">
             <p>A platform that serves as an aggregator for social media, news and price charts to allow users to perform quicker market research. The objective is for users to use 1 instead of 5 different tabs to do market research, built-in portfolio manager to manage assets, asset page has a timeline scroller that allows users to see correlation in data-points.</p>
@@ -42,7 +42,7 @@ const Portfolio = () => {
   const Gearless = () => (
       <div className="project">
       <div className="project-content">
-        <div className="project-label">Fullstack Application</div>
+        <div className="project-label">Fullstack Application - Design & Development</div>
         <h4 className="project-title">Gearless</h4>
         <div className="project-details">
           <p>A marketplace application for outdoor gear rental/hiring. Allows users to create, book, rent their outdoor gear.</p>
@@ -74,9 +74,9 @@ const Portfolio = () => {
       <div className="project">
       <div className="project-content">
         <div className="project-label">Design & Development</div>
-        <h4 className="project-title">Personal Website</h4>
+        <h4 className="project-title">Portfolio (The One You're On)</h4>
         <div className="project-details">
-          <p>Personal Website to showcase some of my work</p>
+          <p>Well, just a place to showcase some of my works and what I'm up to.</p>
           <ul>
             <li>React</li>
             <li>SCSS</li>
@@ -128,6 +128,8 @@ const Portfolio = () => {
     </div>
   </div>
 )
+
+
   return (
     <div className="project-container" id="portfolio">
       <h3>Some Stuff I've Built<span className="orange">.</span></h3>
