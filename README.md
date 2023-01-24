@@ -23,15 +23,6 @@
 <p><a href="https://www.linkedin.com/in/elliottkan/" target="_blank">Linked in Profile @elliottkan</a>.</p>
 <p>Feel free to connect with me to chat about anything technology, design or if there's an opportunity you would like to discuss :)</p>
 
-## Inspiration
-I would like to acknowledge some of the websites and resources that I've referenced in creation of this website.
-
-<ul>
-<li><a href="https://brittanychiang.com" target="_blank">Brittany Chiang</a>
-<li><a href="https://www.matthewencina.com" target="_blank">Matthew Encina</a>
-<li><a href="https://www.kiranraszka.com" target="_blank">Kiran Razszka</a>
-</ul>
-
 ---
 
 License
