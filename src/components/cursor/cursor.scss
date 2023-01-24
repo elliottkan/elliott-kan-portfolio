@@ -8,8 +8,8 @@
     border: 1px solid black;
     border-radius: 100%;
     transform: translate(-50%, -50%);
-    -webkit-transition-duration: 100ms;
-    transition-duration: 100ms;
+    -webkit-transition-duration: 50ms;
+    transition-duration: 50ms;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     will-change: width, height, transform, border;
@@ -28,7 +28,7 @@
     transform: translate(-50%, -50%);
     z-index: 999;
     pointer-events: none;
-    transition: 100ms;
+    transition: 50ms;
   }
 
   .hover {

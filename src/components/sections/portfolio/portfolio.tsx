@@ -91,7 +91,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="project-img">
-        <a href="#">
+        <a href="https://github.com/elliottkan/elliott-kan-portfolio">
         <StaticImage src='../../../assets/elliott-personal-website.png' placeholder="blurred" alt="Personal Portfolio Project" className="img"/>
         </a>
      </div>
@@ -140,4 +140,3 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
-
