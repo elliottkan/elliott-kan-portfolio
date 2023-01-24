@@ -40,7 +40,7 @@ const Cursor = () => {
         item.removeEventListener("mouseleave", handleMouseLeave);
       });
     };
-  }, [location.pathname]);
+  }, []);
 
   return (
     <>
