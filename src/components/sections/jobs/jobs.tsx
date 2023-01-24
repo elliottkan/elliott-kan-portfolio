@@ -13,25 +13,6 @@ const Jobs = () => {
     { role: "Estimator & Draftsperson", company: "Earthlift Excavations", range: "2017 - 2018" },
   ];
 
-  const EmailLink = () => {
-    return (
-      <a href="mailto:elliottkan7@gmail.com">here</a>
-    )
-  }
-
-  const ResumeLink = () => {
-    return (
-      <a
-          className=""
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          here.
-      </a>
-    )
-  }
-
   const CurrentJob = () => (
     <>
       <p>Currently, I am a web designer and developer at KandoStudio. Each day brings new and exciting challenges as I work on a diverse range of projects for clients seeking to establish or enhance their online presence.</p>
