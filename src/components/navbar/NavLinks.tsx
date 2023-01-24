@@ -5,29 +5,28 @@ const NavLinks = () => {
 
   const SectionLinks = () => {
     return (
-
-      <ul>
-        <li >
-        <Link to="#about">
-          About
-        </Link>
-        </li>
-        <li>
-        <Link to="#experience">
-          Experience
-        </Link>
-        </li>
-        <li>
-        <Link to="#portfolio">
-          Work
-        </Link>
-        </li>
-        <li>
-        <Link to="#contact">
-          Contact
-        </Link>
-        </li>
-      </ul>
+        <ul >
+          <li >
+          <Link to="#about">
+            About
+          </Link>
+          </li>
+          <li>
+          <Link to="#experience">
+            Experience
+          </Link>
+          </li>
+          <li>
+          <Link to="#portfolio">
+            Work
+          </Link>
+          </li>
+          <li>
+          <Link to="#contact">
+            Contact
+          </Link>
+          </li>
+        </ul>
     );
   };
 

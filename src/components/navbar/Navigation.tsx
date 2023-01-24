@@ -11,9 +11,10 @@ const Navigation = () => {
 
   return (
     <div>
-      <div open={open} onClick={() => setOpen(!open)}>
+      <div onClick={() => setOpen(!open)}>
         <Hamburger/>
-        {open ? <MobileNavigation/> : <DesktopNavigation/>}
+        {open && <MobileNavigation/>}
+        <DesktopNavigation/>
       </div>
     </div>
   )

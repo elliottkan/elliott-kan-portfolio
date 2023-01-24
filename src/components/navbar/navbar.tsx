@@ -20,6 +20,7 @@ const Navbar = () => {
     );
   };
 
+
   return (
     <header>
       <nav className={navbarClass}>
