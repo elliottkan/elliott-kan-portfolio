@@ -6,9 +6,9 @@ const Contact = () => {
 
   return (
     <div className="contact-container"id="contact">
-      <h3>Let's build something good, together<span className="orange">.</span></h3>
+      <h3>Let's build something great, together<span className="orange">.</span></h3>
       <p>Drop me a line for opportunities, collaborations, inquiries, or just to have a chat.</p>
-      <EmailLink prop="elliottkan7@gmail.com"/>
+      <EmailLink prop="Say Hello"/>
     </div>
    );
 }

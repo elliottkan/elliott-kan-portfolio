@@ -12,9 +12,10 @@
     margin-bottom: 4rem;
     color: rgb(69, 68, 68);
   }
-  .link {
-    font-size: 1rem;
-    font-weight: 600;
+
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
 
     &:hover {
       color: gray;
