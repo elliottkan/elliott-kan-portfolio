@@ -15,7 +15,18 @@ const config: GatsbyConfig = {
   },
   plugins: [
     "gatsby-plugin-sass",
-    // "gatsby-plugin-google-gtag",
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-TFDR6BLHV1"
+        ],
+        pluginConfig: {
+          head: false,
+          // origin: "https://www.elliottkan.com",
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
