@@ -10,7 +10,7 @@ const Portfolio = () => {
   const iconSize = 20
 
   const TakeStock = () => (
-      <div className="project">
+    <InView as="div" className="project" onChange={(inView, entry) => entry.target.classList.add('square-animation')}>
         <div className="project-content">
           <div className="project-label">Fullstack Application - Design & Development</div>
           <h4 className="project-title">TakeStock</h4>
@@ -38,10 +38,10 @@ const Portfolio = () => {
           <StaticImage src='../../../assets/takestock.png' placeholder="blurred" alt="TakeStock Project" className="img"/>
           </a>
         </div>
-      </div>
+    </InView>
   )
   const Gearless = () => (
-      <div className="project">
+    <InView as="div" className="project" onChange={(inView, entry) => entry.target.classList.add('square-animation')}>
       <div className="project-content">
         <div className="project-label">Fullstack Application - Design & Development</div>
         <h4 className="project-title">Gearless</h4>
@@ -69,7 +69,7 @@ const Portfolio = () => {
         <StaticImage src='../../../assets/gearless.png' placeholder="blurred" alt="Gearless Project" className="img"/>
         </a>
      </div>
-    </div>
+    </InView>
   )
   const PersonalWebsite = () => (
       <div className="project">
@@ -133,7 +133,7 @@ const Portfolio = () => {
 
   return (
     <div className="project-container" id="portfolio">
-      <h3 data-sal="slide-up">Some Stuff I've Built<span className="orange">.</span></h3>
+      <h3>Some Stuff I've Built<span className="orange">.</span></h3>
       <TakeStock />
       <Gearless/>
       <CommunityCode/>
