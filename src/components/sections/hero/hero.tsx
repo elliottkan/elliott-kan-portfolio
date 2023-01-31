@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
-      <h1>Hello, World! I'm <span className="name-effect">Elliott</span></h1>
+      <h1 >Hello, World! I'm <span className="name-effect">Elliott</span></h1>
       <div>
         <TypingText />
       </div>

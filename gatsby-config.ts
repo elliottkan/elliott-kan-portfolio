@@ -4,7 +4,8 @@ const path = require(`path`)
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Elliott Kan Portfolio`,
-    siteUrl: `https://www.elliottkan.com`
+    siteUrl: `https://www.elliottkan.com`,
+    lang: "en",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -14,6 +15,7 @@ const config: GatsbyConfig = {
     DEV_SSR: true
   },
   plugins: [
+    // If in future https://www.gatsbyjs.com/plugins/gatsby-plugin-transition-link/ is used - refer to scroll-reveal docs again due to potential conflict
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-gtag",

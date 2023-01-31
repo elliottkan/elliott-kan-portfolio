@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "./portfolio.scss"
 import * as FiIcons from "react-icons/fi";
+import { InView } from 'react-intersection-observer';
 
 
 const Portfolio = () => {
@@ -132,8 +133,8 @@ const Portfolio = () => {
 
   return (
     <div className="project-container" id="portfolio">
-      <h3>Some Stuff I've Built<span className="orange">.</span></h3>
-      <TakeStock/>
+      <h3 data-sal="slide-up">Some Stuff I've Built<span className="orange">.</span></h3>
+      <TakeStock />
       <Gearless/>
       <CommunityCode/>
       <PersonalWebsite/>
