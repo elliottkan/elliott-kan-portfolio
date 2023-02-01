@@ -2,12 +2,20 @@ import React from 'react';
 import './about.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import { EmailLink, ResumeLink } from '../../shared/links';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
 
+  const options = {
+    threshold: 0.2,
+    triggerOnce: true,
+  }
+
+  const { ref, inView } = useInView(options);
+
   return (
-    <div className="about-container" id="about">
-      <div className="text-container">
+    <div ref={ref} className="about-container" id="about">
+      <div className={`${'fade-in-up text-container'} ${inView && 'appear'}`}>
         <h2>Who in the world is Elliott?</h2>
         <p>Hey there!</p>
         <p>I am a <strong>software developer</strong> with a love for technology and problem-solving. Outside of work, you can find me indulging my inner outdoor enthusiast through rock climbing and exploring the great outdoors. I'm an avid rock climber and love nothing more than getting out into nature and pushing myself to new heights (both literally and figuratively).</p>
@@ -16,7 +24,7 @@ const About = () => {
         <p>Want to know more? Check out my resume, < ResumeLink prop="here"/> </p>
         <p>Or flick me an email at < EmailLink prop="elliottkan7@gmail.com" />.</p>
       </div>
-      <div className="photo-container">
+      <div className={`${'fade-in-down photo-container'} ${inView && 'appear'}`}>
         <StaticImage src='../../../assets/elliott-headshot.jpg' placeholder="blurred" alt="A Handsome man called Elliott" />
       </div>
     </div>

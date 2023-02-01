@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import "./jobs.scss"
 
 const Jobs = () => {
@@ -62,8 +63,15 @@ const Jobs = () => {
     }
   }
 
+  const options = {
+    threshold: 0.3,
+    triggerOnce: true,
+  }
+
+  const { ref, inView } = useInView(options);
+
   return (
-    <div className="experience-container" id="experience">
+    <div ref={ref} className={`${'fade-in-up experience-container'} ${inView && 'appear'}`} id="experience">
       <div className="flex align-center">
         <h3>Experience<span className="orange">.</span></h3>
       </div>

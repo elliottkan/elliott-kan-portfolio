@@ -2,15 +2,21 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "./portfolio.scss"
 import * as FiIcons from "react-icons/fi";
-import { InView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 
 
 const Portfolio = () => {
 
-  const iconSize = 20
+  const TakeStock = () => {
 
-  const TakeStock = () => (
-    <InView as="div" className="project" onChange={(inView, entry) => entry.target.classList.add('square-animation')}>
+    const options = {
+      threshold: 0.2,
+      triggerOnce: true,
+    }
+    const { ref, inView } = useInView(options);
+
+    return (
+      <div ref={ref} className={`${'fade-in-up project'} ${inView && 'appear'}`} >
         <div className="project-content">
           <div className="project-label">Fullstack Application - Design & Development</div>
           <h4 className="project-title">TakeStock</h4>
@@ -38,10 +44,21 @@ const Portfolio = () => {
           <StaticImage src='../../../assets/takestock.png' placeholder="blurred" alt="TakeStock Project" className="img"/>
           </a>
         </div>
-    </InView>
-  )
-  const Gearless = () => (
-    <InView as="div" className="project" onChange={(inView, entry) => entry.target.classList.add('square-animation')}>
+    </div>
+    )
+  }
+
+  const Gearless = () => {
+
+    const options = {
+      threshold: 0.2,
+      triggerOnce: true,
+    }
+
+    const { ref, inView } = useInView(options);
+
+    return (
+      <div ref={ref} className={`${'fade-in-up project'} ${inView && 'appear'}`} >
       <div className="project-content">
         <div className="project-label">Fullstack Application - Design & Development</div>
         <h4 className="project-title">Gearless</h4>
@@ -69,10 +86,19 @@ const Portfolio = () => {
         <StaticImage src='../../../assets/gearless.png' placeholder="blurred" alt="Gearless Project" className="img"/>
         </a>
      </div>
-    </InView>
-  )
-  const PersonalWebsite = () => (
-      <div className="project">
+    </div>
+    )
+  }
+
+  const PersonalWebsite = () => {
+    const options = {
+      threshold: 0.2,
+      triggerOnce: true,
+    }
+    const { ref, inView } = useInView(options);
+
+    return (
+      <div ref={ref} className={`${'fade-in-up project'} ${inView && 'appear'}`} >
       <div className="project-content">
         <div className="project-label">Design & Development</div>
         <h4 className="project-title">Portfolio (The One You're On)</h4>
@@ -97,49 +123,67 @@ const Portfolio = () => {
         </a>
      </div>
     </div>
-  )
+    )
+  }
 
-  const CommunityCode = () => (
-    <div className="project">
-    <div className="project-content">
-      <div className="project-label">In Progress - Design & Development</div>
-      <h4 className="project-title">CommunityCode</h4>
-      <div className="project-details">
-        <p>CommunityCode is the new way for developers to get their solutions. Ask any question for any language, save hours browsing google, and level up as a developer.</p>
-        <p>Combining the power of ChatGPT and StackOverflow.</p>
-        <ul>
-          <li>NextJS</li>
-          <li>Tailwind</li>
-          <li>Supabase</li>
-        </ul>
-        {/* <div className="project-links">
-          <a href="https://github.com/FACE-co/TakeStock" aria-label="GitHub Link">
-            <FiIcons.FiGithub size={iconSize}/>
+  const CommunityCode = () => {
+
+    const options = {
+      threshold: 0.2,
+      triggerOnce: true,
+    }
+    const { ref, inView } = useInView(options);
+
+    return (
+      <div ref={ref} className={`${'fade-in-up project'} ${inView && 'appear'}`} >
+        <div className="project-content">
+          <div className="project-label">In Progress - Design & Development</div>
+          <h4 className="project-title">CommunityCode</h4>
+          <div className="project-details">
+            <p>CommunityCode is the new way for developers to get their solutions. Ask any question for any language, save hours browsing google, and level up as a developer.</p>
+            <p>Combining the power of ChatGPT and StackOverflow.</p>
+            <ul>
+              <li>NextJS</li>
+              <li>Tailwind</li>
+              <li>Supabase</li>
+            </ul>
+            {/* <div className="project-links">
+              <a href="https://github.com/FACE-co/TakeStock" aria-label="GitHub Link">
+              <FiIcons.FiGithub size={iconSize}/>
+              </a>
+              <a href="https://www.takestock.dev" aria-label="External Link" className="external">
+              <FiIcons.FiExternalLink size={iconSize}/>
+              </a>
+            </div> */}
+          </div>
+        </div>
+        <div className="project-img">
+          <a href="#">
+          <StaticImage src='../../../assets/communitycode.png' placeholder="blurred" alt="CommunityCode Project" className="img"/>
           </a>
-          <a href="https://www.takestock.dev" aria-label="External Link" className="external">
-            <FiIcons.FiExternalLink size={iconSize}/>
-          </a>
-        </div> */}
+        </div>
       </div>
-    </div>
-    <div className="project-img">
-      <a href="#">
-      <StaticImage src='../../../assets/communitycode.png' placeholder="blurred" alt="CommunityCode Project" className="img"/>
-      </a>
-    </div>
-  </div>
-)
+    )
+  }
 
+  const iconSize = 20
+
+  const options = {
+    threshold: 0.2,
+    triggerOnce: true,
+  }
+
+  const { ref, inView } = useInView(options);
 
   return (
     <div className="project-container" id="portfolio">
-      <h3>Some Stuff I've Built<span className="orange">.</span></h3>
+        <h3 ref={ref} className={`${'fade-in-up'} ${inView && 'appear'}`}>Some Stuff I've Built<span className="orange">.</span></h3>
       <TakeStock />
-      <Gearless/>
-      <CommunityCode/>
-      <PersonalWebsite/>
+      <Gearless />
+      <CommunityCode />
+      <PersonalWebsite />
     </div>
    );
-}
+  }
 
-export default Portfolio;
+  export default Portfolio;

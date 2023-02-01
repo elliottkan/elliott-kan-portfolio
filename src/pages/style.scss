@@ -129,3 +129,47 @@ ol, ul, li {
     animation: wipe-enter 1s 1;
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  filter: blur(1px);
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translate(0px, 20px);
+  filter: blur(1px);
+  transition: 600ms ease-in-out;
+}
+.fade-in-down {
+  opacity: 0;
+  transform: translate(0px, -20px);
+  filter: blur(1px);
+  transition: 600ms ease-in-out;
+}
+.fade-in-left {
+  opacity: 0;
+  transform: translate(20%, 0px);
+  filter: blur(20px);
+  transition: 600ms ease-in-out;
+}
+.fade-in-right {
+  opacity: 0;
+  transform: translate(-20%, 0px);
+  filter: blur(20px);
+  transition: 600ms ease-in-out;
+}
+.clip-in {
+  opacity: 0;
+  filter: blur(7px);
+  transform: translate(0px, 20px);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: 600ms ease-out;
+}
+.appear {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  z-index: 0;
+  filter: blur(0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
