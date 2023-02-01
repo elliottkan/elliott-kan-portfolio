@@ -3,6 +3,7 @@ import { useScroll } from "../../hooks/useScroll";
 import "../icons/icons.scss";
 import "./navbar.scss";
 import { Link } from "gatsby";
+import { Transition } from 'react-transition-group';
 
 
 const NavLinks = ({open, setOpen}) => {
