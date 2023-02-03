@@ -22,6 +22,7 @@ const Portfolio = () => {
           <h4 className="project-title">TakeStock</h4>
           <div className="project-details">
             <p>A platform that serves as an aggregator for social media, news and price charts to allow users to perform quicker market research. The objective is for users to use 1 instead of 5 different tabs to do market research, built-in portfolio manager to manage assets, asset page has a timeline scroller that allows users to see correlation in data-points.</p>
+            <p>Currently only optimised for Desktop</p>
             <ul>
               <li>Ruby on Rails</li>
               <li>Tailwind</li>
@@ -64,6 +65,7 @@ const Portfolio = () => {
         <h4 className="project-title">Gearless</h4>
         <div className="project-details">
           <p>A marketplace application for outdoor gear rental/hiring. Allows users to create, book, rent their outdoor gear.</p>
+          <p>Currently only optimised for Desktop</p>
           <ul>
             <li>Ruby on Rails</li>
             <li>Bootstrap</li>
@@ -104,6 +106,7 @@ const Portfolio = () => {
         <h4 className="project-title">Portfolio (The One You're On)</h4>
         <div className="project-details">
           <p>Well, just a place to showcase some of my works and what I'm up to.</p>
+          <p>Still to come: Blog section and some more slick animations!</p>
           <ul>
             <li>React</li>
             <li>SCSS</li>
