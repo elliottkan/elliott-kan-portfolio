@@ -4,14 +4,30 @@
 
   a {
     font-weight: 600;
+    transition: all 200ms;
 
     &:hover {
-      color: black;
-      text-decoration: underline;
-      text-decoration-color: orange;
-      text-decoration-thickness: 0.2em;
-      text-underline-offset: 0.3em;
+      color: gray;
     }
+  }
+
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
   h3 {
