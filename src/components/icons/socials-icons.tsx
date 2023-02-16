@@ -9,14 +9,17 @@ const iconSize = 20
 
 export const socialsIcons = [
   {
+    name: "Elliott Kan Medium",
     icon: <SiIcons.SiMedium size={iconSize}/>,
     link: "https://medium.com/@elliottk"
   },
   {
+    name: "Elliott Kan Github",
     icon: <DiIcons.DiGithubBadge size={24}/>,
     link: "https://github.com/elliottkan"
   },
   {
+    name: "Elliott Kan LinkedIn",
     icon: <FaIcons.FaLinkedinIn size={iconSize}/>,
     link: "https://www.linkedin.com/in/elliottkan/"
   },
@@ -24,6 +27,7 @@ export const socialsIcons = [
 
 export const emailIcons = [
   {
+    name: "Elliott Kan Email",
     icon: <AiIcons.AiOutlineMail size={iconSize}/>,
     link: "elliottkan7@gmail.com"
   }

@@ -31,17 +31,17 @@ const Portfolio = () => {
               <li>PG Search</li>
             </ul>
             <div className="project-links">
-              <a href="https://github.com/FACE-co/TakeStock" target="_blank" aria-label="GitHub Link">
+              <a href="https://github.com/FACE-co/TakeStock" target="_blank" aria-label="GitHub Link to Takestock">
                 <FiIcons.FiGithub size={iconSize}/>
               </a>
-              <a href="https://www.takestock.dev" target="_blank" aria-label="External Link" className="external">
+              <a href="https://www.takestock.dev" target="_blank" aria-label="External Link to Takestock" className="external">
                 <FiIcons.FiExternalLink size={iconSize}/>
               </a>
             </div>
           </div>
         </div>
         <div className="project-img">
-          <a href="https://www.takestock.dev" target="_blank">
+          <a href="https://www.takestock.dev" target="_blank" aria-label="GitHub Link to Takestock">
           <StaticImage src='../../../assets/takestock.png' placeholder="blurred" alt="TakeStock Project" className="img"/>
           </a>
         </div>
@@ -74,7 +74,7 @@ const Portfolio = () => {
             <li>Heroku</li>
           </ul>
           <div className="project-links">
-            <a href="https://github.com/FACE-co/Gearless" target="_blank" aria-label="GitHub Link">
+            <a href="https://github.com/FACE-co/Gearless" target="_blank" aria-label="GitHub Link to Gearless">
               <FiIcons.FiGithub size={iconSize}/>
             </a>
             {/* <a href="https://www.takestock.dev" aria-label="External Link" className="external">
@@ -84,7 +84,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="project-img">
-        <a href="https://github.com/FACE-co/Gearless" target="_blank">
+        <a href="https://github.com/FACE-co/Gearless" target="_blank" aria-label="GitHub Link to Gearless">
         <StaticImage src='../../../assets/gearless.png' placeholder="blurred" alt="Gearless Project" className="img"/>
         </a>
      </div>
@@ -114,14 +114,14 @@ const Portfolio = () => {
             <li>Figma</li>
           </ul>
           <div className="project-links">
-            <a href="https://github.com/elliottkan/elliott-kan-portfolio"  aria-label="GitHub Link"  target="_blank">
+            <a href="https://github.com/elliottkan/elliott-kan-portfolio"  aria-label="GitHub Link to Elliott Kan Portfolio"  target="_blank">
               <FiIcons.FiGithub size={iconSize}/>
             </a>
           </div>
         </div>
       </div>
       <div className="project-img">
-        <a href="https://github.com/elliottkan/elliott-kan-portfolio" target="_blank">
+        <a href="https://github.com/elliottkan/elliott-kan-portfolio" target="_blank" aria-label="GitHub Link to Elliott Kan Portfolio">
         <StaticImage src='../../../assets/elliott-personal-website.png' placeholder="blurred" alt="Personal Portfolio Project" className="img"/>
         </a>
      </div>
@@ -161,7 +161,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="project-img">
-          <a href="#" target="_blank">
+          <a href="#" target="_blank" aria-label="Link to Community Code">
           <StaticImage src='../../../assets/communitycode.png' placeholder="blurred" alt="CommunityCode Project" className="img"/>
           </a>
         </div>

@@ -33,4 +33,10 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Elliott Kan Portfolio</title>
+export const Head: HeadFC = () => (
+  <>
+  <html lang="en"/>
+  <title>Elliott Kan Portfolio</title>
+  <meta name="description" content="Elliott Kan Portfolio" />
+</>
+)

@@ -5,16 +5,16 @@ import "./icons/icons.scss"
 import "./footer.scss"
 
 const Icons = (
-  socialsIcons.map(({ icon, link }) => (
-    <a className="clickable-icon" href={link} target="_blank" rel="noopener noreferrer">
+  socialsIcons.map(({ name, icon, link }) => (
+    <a className="clickable-icon" href={link} target="_blank" rel="noopener noreferrer" aria-label={name}>
       {icon}
     </a>
   ))
 )
 
 const Email = (
-  emailIcons.map(({ icon, link }) => (
-    <a className="clickable-icon" href={`mailto:${link}`}>{icon}</a>
+  emailIcons.map(({ name, icon, link }) => (
+    <a className="clickable-icon" aria-label={name} href={`mailto:${link}`}>{icon}</a>
   ))
 )
 
