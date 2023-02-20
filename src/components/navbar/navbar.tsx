@@ -3,8 +3,6 @@ import { useScroll } from "../../hooks/useScroll";
 import "../icons/icons.scss";
 import "./navbar.scss";
 import { Link } from "gatsby";
-import { Transition } from 'react-transition-group';
-
 
 const NavLinks = ({open, setOpen}) => {
   const links = [
@@ -31,7 +29,7 @@ const NavLinks = ({open, setOpen}) => {
       <div className="mobile-link-container">
         <ul>
           {links.map((link)=>(
-             <li onClick={()=>{setOpen(false)}}>
+             <li key={link.name} onClick={()=>{setOpen(false)}}>
              <Link to={link.location}>
                {link.name}
              </Link>
@@ -48,7 +46,7 @@ const NavLinks = ({open, setOpen}) => {
       <div className="desktop-link-container">
         <ul>
           {links.map((link)=>(
-             <li>
+             <li key={link.name}>
              <Link to={link.location}>
                {link.name}
              </Link>
@@ -136,9 +134,9 @@ const Navbar = () => {
           <LogoLink />
         </div>
         <div>
-        <p onClick={() => setOpen(!open)}>
+        <div onClick={() => setOpen(!open)}>
           {open ? <HamburgerIconOpen/> : <HamburgerIconClosed/>}
-        </p>
+        </div>
           <NavLinks setOpen={setOpen} open={open}/>
         </div>
       </nav>
