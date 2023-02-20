@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import "./jobs.scss"
@@ -20,7 +19,7 @@ const Jobs = () => {
       <p>Currently, I am a web designer and developer at KandoStudio. Each day brings new and exciting challenges as I work on a diverse range of projects for clients seeking to establish or enhance their online presence.</p>
       <p>These projects encompass a wide range of responsibilities, including sales, market research, design, development and hosting. </p>
       <p>To accomplish these tasks, I utilize tools such as Figma, React and GatsbyJS for design and development.</p>
-      <p>You can find out more about what I do at <Link to="https://www.kandostudio.com.au" aria-label="Kando Studio Link"  target="_blank">www.kandostudio.com.au</Link> </p>
+      <p>You can find out more about what I do at <a href="https://www.kandostudio.com.au" aria-label="Kando Studio Link" rel="noopener noreferrer" target="_blank">www.kandostudio.com.au</a> </p>
 
 
       {/* <p>Background in the Shopify platform for e-commerce clients.</p> */}
@@ -30,14 +29,14 @@ const Jobs = () => {
     <>
       <p>Building Designer for a Prefab Transportable Modular Home builder where my role was to communicate with multi-disciplinary teams of engineers, consultants, tradespeople, council and clients on a daily basis.</p>
       <p>My main responsibility was to produce quality and accessible working drawings for a diverse array of clients. Additionally, I also worked to improve company drafting practices and processes to ensure that the company was providing the best service to clients.</p>
-      <p>You can find out more about what I did by clicking on <Link to="https://anchorhomes.com.au/projects/" aria-label="Anchor Homes Link"  target="_blank">this link.</Link></p>
+      <p>You can find out more about what I did by clicking on <a href="https://anchorhomes.com.au/projects/" aria-label="Anchor Homes Link" rel="noopener noreferrer" target="_blank">this link.</a></p>
     </>
   )
   const HenleyHomes = () => (
     <>
       <p>As an Architectural Draftsperson for one of Victoria's largest award-winning builders, I had the opportunity to acquire a wide range of technical and interpersonal skills during my tenure at Henley Properties. </p>
       <p>My main focus was meeting deadlines, KPIs and providing great customer service, while also seeking to improve my skills. My responsibilities included preparing detailed drawings and managing interactions with team members, contractors and stakeholders involved in the project.</p>
-      <p>You can find out more about what I did by clicking on <Link to="https://henley.com.au/" aria-label="Henley Homes Link"  target="_blank">this link.</Link></p>
+      <p>You can find out more about what I did by clicking on <a href="https://henley.com.au/" aria-label="Henley Homes Link" rel="noopener noreferrer" target="_blank">this link.</a></p>
     </>
   )
   const EarthliftExcavations = () => (
@@ -84,8 +83,8 @@ const Jobs = () => {
       <div className="jobs-container">
         <div className="job-list">
           {items.map((item, index) => (
-            <div className="job-tab">
-              <div key={item.index} className="selectable-jobs" onClick={() => setActiveIndex(index)} >
+            <div className="job-tab" key={index}>
+              <div className="selectable-jobs" onClick={() => setActiveIndex(index)} >
                 <p>{item.range}</p>
                 <p>{item.role}</p>
                 <p>{item.company}</p>
