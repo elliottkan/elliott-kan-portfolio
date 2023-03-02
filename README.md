@@ -10,7 +10,6 @@
 ## Objective of Portfolio
 <p>The first iteration of <a href="https://www.elliottkan.com" target="_blank">elliottkan.com</a>.</p>
 <p>The objective of this portfolio was to create a portfolio website whilst giving myself an opportunity with working with React and Typescript.<p>
-<p>This is the MVP which I decided to deploy just to 'have something out there'. There are still some kinks to iron out - which involve adding animations, slight bug-fixes and code to refactor in the back end. There are still some other miscellaneous sections to be released so keep an eye out for that!<p>
 
 ### This app has been completed with the following:
 <ul>
