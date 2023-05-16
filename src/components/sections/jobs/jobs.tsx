@@ -17,10 +17,9 @@ const Jobs = () => {
 
   const ConvertDigital = () => (
     <>
-      <p>Currently, I am a developer at ConvertDigital.</p>
+      <p>I am currently a developer at ConvertDigital, where I have the opportunity to work on multiple features and projects concurrently for some super cool clients</p>
       <p>My job involves developing software solutions for clients. I get to make technical decisions, solve problems, write code, and create awesome digital products.</p>
-      <p>I collaborate with the Project Managers and the Client Success team to improve e-commerce sites and software for our clients. This means customizing modules, configuring platforms, and integrating new systems into the e-commerce setup. </p>
-      <p>I'm in charge of testing product performance and quickly resolving any technical issues that pop up during testing. I also help troubleshoot and fix technical problems in our clients' e-commerce implementations.</p>
+      <p>I collaborate with the Project Managers and the Client Success team to improve e-commerce sites and software for our clients. This means customizing modules, configuring platforms, and integrating new systems into the e-commerce setup.</p>
       <p>You can find out more about what I do at <a href="https://www.convertdigital.com.au" aria-label="Convert Digital Link" rel="noopener noreferrer" target="_blank">this link.</a> </p>
     </>
   )
