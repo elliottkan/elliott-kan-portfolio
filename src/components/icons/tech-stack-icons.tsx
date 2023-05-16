@@ -60,5 +60,9 @@ export const techStackIcons = [
   {
     icon: <DiIcons.DiGitBranch size={iconSize}/>,
     name: "Git",
+  },
+  {
+    icon: <SiIcons.SiShopify size={iconSize}/>,
+    name: "Shopify",
   }
 ]

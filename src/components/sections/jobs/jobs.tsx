@@ -8,15 +8,26 @@ const Jobs = () => {
 
   // Declare an array of 5 items
   const items = [
+    { role: "Junior Developer", company: "Convert Digital", range: "2023 -  " },
     { role: "Web Developer & Designer", company: "Kando Studio", range: "2022 -  " },
     { role: "Building Designer", company: "Anchor Homes", range: "2021 - 2022" },
     { role: "Architectural Draftsperson", company: "Henley Properties", range: "2018 - 2021" },
     { role: "Estimator & Draftsperson", company: "Earthlift Excavations", range: "2017 - 2018" },
   ];
 
-  const CurrentJob = () => (
+  const ConvertDigital = () => (
     <>
-      <p>Currently, I am a web designer and developer at KandoStudio. Each day brings new and exciting challenges as I work on a diverse range of projects for clients seeking to establish or enhance their online presence.</p>
+      <p>Currently, I am a developer at ConvertDigital.</p>
+      <p>My job involves developing software solutions for clients. I get to make technical decisions, solve problems, write code, and create awesome digital products.</p>
+      <p>I collaborate with the Project Managers and the Client Success team to improve e-commerce sites and software for our clients. This means customizing modules, configuring platforms, and integrating new systems into the e-commerce setup. </p>
+      <p>I'm in charge of testing product performance and quickly resolving any technical issues that pop up during testing. I also help troubleshoot and fix technical problems in our clients' e-commerce implementations.</p>
+      <p>You can find out more about what I do at <a href="https://www.convertdigital.com.au" aria-label="Convert Digital Link" rel="noopener noreferrer" target="_blank">this link.</a> </p>
+    </>
+  )
+
+  const KandoStudio = () => (
+    <>
+      <p> I am a web designer and developer at KandoStudio for my work outside of work. Each day brings new and exciting challenges as I work on a diverse range of projects for clients seeking to establish or enhance their online presence.</p>
       <p>These projects encompass a wide range of responsibilities, including sales, market research, design, development and hosting. </p>
       <p>To accomplish these tasks, I utilize tools such as Figma, React and GatsbyJS for design and development.</p>
       <p>You can find out more about what I do at <a href="https://www.kandostudio.com.au" aria-label="Kando Studio Link" rel="noopener noreferrer" target="_blank">www.kandostudio.com.au</a> </p>
@@ -25,6 +36,7 @@ const Jobs = () => {
       {/* <p>Background in the Shopify platform for e-commerce clients.</p> */}
     </>
   )
+
   const AnchorHomes = () => (
     <>
       <p>Building Designer for a Prefab Transportable Modular Home builder where my role was to communicate with multi-disciplinary teams of engineers, consultants, tradespeople, council and clients on a daily basis.</p>
@@ -56,15 +68,17 @@ const Jobs = () => {
   const RenderCurrentJob = () => {
     switch (activeIndex) {
       case 0:
-        return <CurrentJob />;
+        return <ConvertDigital />;
       case 1:
-        return <AnchorHomes />;
+        return <KandoStudio />;
       case 2:
-        return <HenleyHomes />;
+        return <AnchorHomes />;
       case 3:
+        return <HenleyHomes />;
+      case 4:
         return <EarthliftExcavations />;
       default:
-        return <CurrentJob />;
+        return <ConvertDigital />;
     }
   }
 
