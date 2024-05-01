@@ -3,11 +3,19 @@
   h3 {
     margin-bottom: 3rem;
   }
+
   padding-top: 5rem;
+
   a {
-  color: inherit;
-  text-decoration: none;
-  text-decoration-skip-ink: auto;
+    color: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+  }
+
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
   button {
@@ -97,6 +105,33 @@
       line-height: 1.5;
       color: black;
 
+      a {
+        font-weight: 600;
+        transition: all 200ms;
+    
+        &:hover {
+          color: gray;
+        }
+      }
+    
+      a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: orange;
+        transform-origin: bottom left;
+        transition: transform 0.25s ease-out;
+      }
+
+      a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
       p {
 
         padding: 1rem 0;
@@ -135,8 +170,6 @@
           color: orange;
         }
       }
-
-
     }
   }
 
