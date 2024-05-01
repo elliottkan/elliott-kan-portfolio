@@ -61,6 +61,9 @@ p {
 strong {
   font-weight: 600;
 }
+.font-bold {
+  font-weight: bold;
+}
 
 ol, ul, li {
   list-style: none;
@@ -68,6 +71,8 @@ ol, ul, li {
 
 .yellow-underline {
   text-decoration: underline;
+  text-decoration-color: orange;
+  text-underline-offset: 0.2em;
 }
 .orange {
   color: orange;

@@ -22,7 +22,8 @@ const Portfolio = () => {
           <h4 className="project-title">TakeStock</h4>
           <div className="project-details">
             <p>A platform that serves as an aggregator for social media, news and price charts to allow users to perform quicker market research. The objective is for users to use 1 instead of 5 different tabs to do market research, built-in portfolio manager to manage assets, asset page has a timeline scroller that allows users to see correlation in data-points.</p>
-            <p>Currently only optimised for Desktop</p>
+            <p>Our API Keys are currently all expired and Heroku no longer offers a free plan - so please be patient as I get it up running properly</p>
+            <p>While I get that sorted, check out the project in the video <a href="https://youtu.be/A0D4YiNwV-8?t=1767">here</a> or host it locally</p>
             <ul>
               <li>Ruby on Rails</li>
               <li>Tailwind</li>
@@ -34,14 +35,14 @@ const Portfolio = () => {
               <a href="https://github.com/FACE-co/TakeStock" rel="noopener noreferrer" target="_blank" aria-label="GitHub Link to Takestock">
                 <FiIcons.FiGithub size={iconSize}/>
               </a>
-              <a href="https://www.takestock.dev" rel="noopener noreferrer" target="_blank" aria-label="External Link to Takestock" className="external">
+              {/* <a href="https://www.takestock.dev" rel="noopener noreferrer" target="_blank" aria-label="External Link to Takestock" className="external">
                 <FiIcons.FiExternalLink size={iconSize}/>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
         <div className="project-img">
-          <a href="https://www.takestock.dev" rel="noopener noreferrer" target="_blank" aria-label="GitHub Link to Takestock">
+          <a href="https://github.com/FACE-co/TakeStock" rel="noopener noreferrer" target="_blank" aria-label="GitHub Link to Takestock">
           <StaticImage src='../../../assets/takestock.png' placeholder="blurred" alt="TakeStock Project" className="img"/>
           </a>
         </div>
@@ -140,15 +141,17 @@ const Portfolio = () => {
     return (
       <div ref={ref} className={`${'fade-in-up project'} ${inView && 'appear'}`} >
         <div className="project-content">
-          <div className="project-label">In Progress - Design & Development</div>
+          <div className="project-label">Cancelled - Design & Development</div>
           <h4 className="project-title">CommunityCode</h4>
           <div className="project-details">
             <p>CommunityCode is the new way for developers to get their solutions. Ask any question for any language, save hours browsing google, and level up as a developer.</p>
             <p>Combining the power of ChatGPT and StackOverflow.</p>
+            <p>To Come: Learnings from working with NextJS and GPT-3.5</p>
             <ul>
               <li>NextJS</li>
               <li>Tailwind</li>
               <li>Supabase</li>
+              <li>GPT-3.5</li>
             </ul>
             {/* <div className="project-links">
               <a href="https://github.com/FACE-co/TakeStock" aria-label="GitHub Link" target="_blank">

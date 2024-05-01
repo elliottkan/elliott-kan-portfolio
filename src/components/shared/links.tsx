@@ -2,19 +2,19 @@ import React from 'react';
 
 interface Props {
   prop: string;
-  }
+}
 
 
 
-  const ResumeLink: React.FC<Props> = ({prop}) => {
-    return (
-      <a
-      className=""
-      href="/resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      >
-        {prop}
+const ResumeLink: React.FC<Props> = ({prop}) => {
+  return (
+    <a
+    className=""
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+      {prop}
     </a>
   )
 }

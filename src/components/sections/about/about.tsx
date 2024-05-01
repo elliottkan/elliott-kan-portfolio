@@ -18,9 +18,10 @@ const About = () => {
       <div className={`${'fade-in-up text-container'} ${inView && 'appear'}`}>
         <h2>Who in the world is Elliott?</h2>
         <p>Hey there!</p>
-        <p>I am a <strong>software developer</strong> with a love for technology and problem-solving. Outside of work, you can find me indulging my inner outdoor enthusiast through rock climbing and exploring the great outdoors. I'm an avid rock climber and love nothing more than getting out into nature and pushing myself to new heights (both literally and figuratively).</p>
-        <p>My past experience in building design has sparked my desire to merge aesthetics and functionality in my work. I thrive in environments where I can use my problem-solving skills and I am passionate about bringing creative solutions to life through collaboration with others across various disciplines.</p>
-        <p>I am a driven and dedicated individual who is always looking for ways to improve myself and those around me. I have a passion for creating solutions that not only contribute to a more positive and sustainable future, but also bring joy and functionality to the users. Whether I am tackling a difficult project or scaling a rock face, I approach everything with determination and a positive attitude.</p>
+        <p>I am a currently a <strong>software developer</strong> with a love for technology, problem-solving, and the great outdoors. Outside of work, you can often find me rock climbing and exploring nature, where I indulge my passion for pushing myself to new heights, both literally and figuratively.</p>
+        <p>My background in building design has instilled in me a desire to merge aesthetics with functionality, a principle I apply to my work as a developer. I thrive in collaborative environments where I can leverage my problem-solving skills to bring creative solutions to life.</p>
+        <p>Proficient in a variety of technologies including React, HTML, CSS, JavaScript, and more, I am adept at building responsive and intuitive user interfaces. Passionate about contributing to a more positive and sustainable future, I am driven to create solutions that not only function seamlessly but also bring joy to users.</p>
+        <p>Whether I'm tackling a challenging project or scaling a rock face, I approach everything with determination and a positive attitude. I am committed to continuous improvement, both personally and professionally, and am always seeking opportunities to grow and learn.</p>
         <p>Want to know more? Check out my resume, < ResumeLink prop="here."/></p>
         <p>Or flick me an email at < EmailLink prop="elliottkan7@gmail.com." /></p>
       </div>
