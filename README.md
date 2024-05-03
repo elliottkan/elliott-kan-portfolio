@@ -2,7 +2,7 @@
   Elliott Kan Portfolio - elliottkan.com 
 </h1>
 <p align="center">
-  Portfolio for <a href="https://www.elliottkan.com" target="_blank">elliottkan.com</a> built and hosted with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby.</a>
+  Portfolio for <a href="https://www.elliottkan.com" target="_blank">elliottkan.com</a> built on <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify.</a>
 </p>
 
 ![demo](https://raw.githubusercontent.com/elliottkan/elliott-kan-portfolio/main/src/assets/elliott-personal-website.png)
