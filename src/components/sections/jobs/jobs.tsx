@@ -8,7 +8,7 @@ const Jobs = () => {
 
   // Declare an array of 5 items
   const items = [
-    { role: "Developer", company: "Convert Digital", range: "2023 -  " },
+    { role: "Software Engineer", company: "Convert Digital", range: "2023 -  " },
     { role: "Web Developer & Designer", company: "Kando Studio", range: "2022 - " },
     { role: "Building Designer", company: "Anchor Homes", range: "2021 - 2022" },
     { role: "Architectural Draftsperson", company: "Henley Properties", range: "2018 - 2021" },
@@ -17,7 +17,7 @@ const Jobs = () => {
 
   const ConvertDigital = () => (
     <>
-      <p>I'm a developer at Convert Digital, specializing in Shopify development. My role enables me to work with a diverse range of clients, each with their unique needs and specifications.</p>
+      <p>I'm a Software Engineer at Convert Digital, specializing in Shopify development. My role enables me to work with a diverse range of clients, each with their unique needs and specifications.</p>
       <p>As part of the Shopify team, I handle multiple features and projects concurrently, utilizing a range of technologies such as <strong>React, Cypress, Tailwind, Ruby, PHP, and Node.js</strong>. I'm proficient in working with <strong>APIs</strong>, including both <strong>RESTful and GraphQL</strong>, and have contributed to our testing suite using <strong>Cypress</strong>.</p>
       <p>I have made significant contributions to our projects which include leading a Searchspring integration, spearheading a loyalty feature using Omneo, and building complex swatches for several clients. I also played a crucial role in developing reusable functions for our Cypress testing suite, enabling the wider team to conduct efficient testing. Additionally, I've worked on aligning our development with WCAG2.2 guidelines, ensuring accessibility standards are met. Alongside these tasks, I regularly contribute to internal documentation, documenting processes, best practices, and project specifics to further enable the team.</p>
       <p>I have experience providing scoping for relevant stakeholders, as well as providing technical briefing for the wider team and have been a point of escalation for projects.</p>
